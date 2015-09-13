@@ -1,3 +1,5 @@
+[Adblock Plus 2.0]
+
 ##a[href*="adf.ly"]
 ##a[href*="adriver"]
 ##a[href*="send.onenetworkdirect.net"]
