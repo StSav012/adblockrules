@@ -124,6 +124,7 @@ cdn.hgdat.com
 cdn.ml-banners.com
 cdn.vipbox.tv
 chitika.net
+chokoladsrv.net
 cityads.ru
 clickadu.com
 clickbank.net
@@ -179,6 +180,7 @@ hghit.com
 holyclick.ru
 hopfeed.com
 http://195.82.146.52/
+http://forum.ru-board.com/board/temp/
 http://kineshemec.ru//images/biz_katalog/vbeso/*
 http://kineshemec.ru/images/biz_katalog/vbeso/*
 http://kineshemec.ru/images/zaplatka/*
@@ -201,6 +203,7 @@ kibitada.ru
 kino-klad.ru
 kiosked.com
 koluty.com
+kt.mixmarket.biz
 l-stat.livejournal.net/js/??ads/*
 ladycenter.ru
 lcads.ru
@@ -327,9 +330,10 @@ vclicks.net
 viewclc.com
 vipleague.me##div[id*="overlay"]
 vipleague.me##div[id="memberad"]
-vk##div#left_ads
+vk.com##div#left_ads
 vk.com##div.ads_ads_news_wrap
 vk.com##div[data-ad]
+vk.com##div[data-ad-view]
 vk.com/ads*
 vk.com/js/al/ads*
 vogorana.ru
