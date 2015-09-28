@@ -1,5 +1,6 @@
 [Adblock Plus 2.0]
 ! my own adblock rules; feel free to discard them
+@@alfabank.ru
 ##a[href*="adf.ly"]
 ##a[href*="adriver"]
 ##a[href*="banner"]
@@ -78,6 +79,7 @@ adtechus.com
 adultadworld.com
 adv457895.ru
 adv679854.ru
+advagava.su
 advertising.com
 advertoly.com
 advertur.ru
