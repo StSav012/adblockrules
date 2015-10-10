@@ -26,7 +26,7 @@
 *advertising.js
 20dollars2surf.com
 ^ad.*
-^ads.*
+*/ads.*
 ^adv.*
 ^baner.*
 ^banner.*
@@ -112,6 +112,7 @@ bidswitch.net
 bidvertiser.com
 bnhtml.com
 bodyclick.net
+bounceexchange.com
 brainient.com
 brucelead.com
 c.hit.ua
@@ -124,7 +125,9 @@ cdn.engine.4dsply.com
 cdn.epom.com
 cdn.hgdat.com
 cdn.ml-banners.com
+cdn.taboola.com
 cdn.vipbox.tv
+cdn.vipboxsa.co
 chitika.net
 chokoladsrv.net
 cityads.ru
@@ -140,6 +143,7 @@ clkoffers.com
 clkrev.com
 clktag.com
 cnt.my
+contentabc.com
 coolad9.com
 countmy.click
 cpmaffiliation.com
@@ -158,6 +162,7 @@ dpm.demdex.net
 dt00.net
 dumedia.ru
 dyzha.com
+e.akamai.net
 ekod.info
 engagebdr.com
 espritgames.ru
@@ -255,6 +260,7 @@ outbrain.com
 oxn.gerkon.eu
 padsdel.com
 padstm.com
+panel100.com
 partnerads.*.yahoo.com
 pdmayt.com
 people-group.su
@@ -263,6 +269,7 @@ pgssl.com
 platform.twitter.com
 playitviral.com
 popads.net
+popunder.js
 proligtb.com
 pubmatic.com
 r.casalemedia.com
@@ -294,10 +301,12 @@ sedo.com
 segmento.ru
 servecontent.net
 serving-sys.com
+show_ads
 silvercdn.com
 slikslik.com
 smart-links.ru
 smartadserver.com
+smartclick.me
 source.mmi.bemobile.ua
 sourcefabric.net
 spadsmedia.com
@@ -322,6 +331,7 @@ tovarro.com
 tradedoubler.com
 trafex.net
 trafficfactory.biz
+trafficjunky.net
 trafficmonsoon.com
 tribalfusion.com
 trkmedia.ollcdn.net
