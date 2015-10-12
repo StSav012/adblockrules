@@ -27,6 +27,7 @@ banners
 *advertising.js
 20dollars2surf.com
 */ad.*
+||ad.*
 */ads.*
 */adv.*
 baner.*
