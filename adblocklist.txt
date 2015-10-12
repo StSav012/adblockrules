@@ -15,21 +15,24 @@
 */SmallAdVipPanel.js
 */adban/*
 */ads/*
-*/adsense/*
+adsense
 */adv-out/*
 */adv/*
-*/advertisement.js
-*/advertising/*
-*/banner/*
-*/banners/*
+advertisement.js
+advertising
+banner
+banner_rotator
+banners
 */bnr/*
 *advertising.js
 20dollars2surf.com
-^ad.*
-*/ads.*
-^adv.*
-^baner.*
-^banner.*
+ad.*
+ads.*
+adv.*
+baner.*
+banner.*
+20d625b48e.se
+2mdn.info
 a.adroll.com
 a.kat.cr
 a.kickass.to
@@ -67,6 +70,7 @@ adpdx.com
 adplxmd.com
 adriver.ru
 adroll.com
+adrotate.se
 adsafeprotected.com
 adscale.de
 adselector.ru
@@ -89,6 +93,7 @@ advombat.ru
 advon.net
 adwolf.ru
 adxplosions.com
+adzerk.net
 agkn.com
 am15.net
 amazon-adsystem.com
@@ -115,9 +120,11 @@ bodyclick.net
 bounceexchange.com
 brainient.com
 brucelead.com
+bubblesmedia.ru
 c.hit.ua
 c8.net.ua
 cdn-static.liverail.com
+cdn.adrotator.se
 cdn.adsrvmedia.net
 cdn.cast.upload.cnet.com
 cdn.castplatform.com
@@ -153,6 +160,7 @@ criteo.com
 crwdcntrl.net
 dataffastguru.info
 de17a.com
+developermedia.com
 dfs.digitalaccess.ru
 directadvert.ru
 directrev.com
@@ -197,10 +205,12 @@ http://www.kineshemec.ru/scripts/common.js
 http://www.nta-nn.ru/upload/bx/*
 https://tpb.la/static/js/ad-scroll.js
 i.holder.com.ua
+imads.integral-marketing.com
 imgsrv.io
 improvedigital.com
 imrk.net
 infolinks.com
+intellitxt.com
 iqok.ru
 k8media.com
 kat.cr##div.advertising
@@ -296,6 +306,7 @@ rt.tizerlady.com
 rtbidder.net
 rubiconproject.com
 rutarget.ru
+rutracker.org/240x400/*
 rvfrm2010.com
 sedo.com
 segmento.ru
@@ -356,6 +367,9 @@ weborama.nl
 weropiy.com
 wlboon.com
 www.kineshemec.ru##div#news_telo_grey
+www.pinterest.com##div[class="ModalManager Module"]
+www.pinterest.com##div[class="Module Nags centeredWithinWrapper"]
+www.pinterest.com##div[class="ModuleNagBaseNagNoScript"]
 xiuuh.com
 xtendmedia.com
 yieldlab.de
