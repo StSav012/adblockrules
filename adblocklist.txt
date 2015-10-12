@@ -26,9 +26,9 @@ banners
 */bnr/*
 *advertising.js
 20dollars2surf.com
-ad.*
-ads.*
-adv.*
+*/ad.*
+*/ads.*
+*/adv.*
 baner.*
 banner.*
 20d625b48e.se
