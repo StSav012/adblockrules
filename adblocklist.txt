@@ -15,8 +15,8 @@
 .adtarget.me
 ||ad.
 /SmallAdVipPanel.js
-/ad.
-/ad/
+*/ad.
+*/ad/*
 /adban/
 /ads.
 /ads/
