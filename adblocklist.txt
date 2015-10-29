@@ -12,6 +12,7 @@
 ##div#tvcap
 ##div.topad1
 ##div[onclick*="yaCounter"]
+^advert.js
 *.adtarget.me
 ||ad.*
 /SmallAdVipPanel.js
@@ -26,6 +27,9 @@
 */bnr/*
 20d625b48e.se
 20dollars2surf.com
+2gis.ru##article._advWarning
+2gis.ru##div.contextPromo
+2gis.ru##div.firmCard__recoveryAds
 2mdn.info
 a.adroll.com
 a.kat.cr
@@ -98,6 +102,8 @@ amazon-adsystem.com
 an.yandex.ru
 api.mgtz.ru
 ato.mx
+awaps.yandex.net
+awaps.yandex.ru
 b.ex.ua/*/*.swf
 banerator.net
 banner-*.*
@@ -175,6 +181,7 @@ dt00.net
 dumedia.ru
 dyzha.com
 e.akamai.net
+e2yth.tv
 ekod.info
 engagebdr.com
 espritgames.ru
@@ -286,6 +293,7 @@ perfectmoney.is
 pgssl.com
 platform.twitter.com
 playitviral.com
+plista.com
 popads.net
 popunder.js
 proligtb.com
