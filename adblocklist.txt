@@ -12,6 +12,7 @@
 ##div#tvcap
 ##div.topad1
 ##div[onclick*="yaCounter"]
+^adverst.js
 ^advert.js
 *.adtarget.me
 ||ad.*
