@@ -28,14 +28,18 @@
 */bnr/*
 20d625b48e.se
 20dollars2surf.com
+28d4cnozozyz.ru
 2gis.ru##article._advWarning
 2gis.ru##div.contextPromo
 2gis.ru##div.firmCard__ads
 2gis.ru##div.firmCard__recoveryAds
 2mdn.info
+3uorg03dxfy.ru
+40g6wokis.ru
 a.adroll.com
 a.kat.cr
 a.kickass.to
+actionteaser.ru
 ad-sys.com
 ad120m.com
 adap.tv
@@ -45,6 +49,7 @@ adcash.com
 addthis.com
 adforce.ru
 adfox.ru
+adframesrc.com
 adgorithms.com
 adit-media.com
 adjs.net
@@ -76,6 +81,8 @@ adscale.de
 adselector.ru
 adsense
 adserver.
+adservone-globotech1.netdna-ssl.com
+adservone.com
 adsk2.co
 adspayment.com
 adsriver.ru
@@ -133,6 +140,7 @@ brucelead.com
 bubblesmedia.ru
 c.hit.ua
 c8.net.ua
+carrerst.ru
 cdn-static.liverail.com
 cdn.adnotch.com
 cdn.adrotator.se
@@ -211,8 +219,10 @@ googlesyndication.com
 googletagservices.com
 googlie.cf
 groovitdigital.com
+grt02.com
 hgads.com
 hghit.com
+hhcdn.ru
 holyclick.ru
 hopfeed.com
 http://195.82.146.52/
@@ -255,6 +265,7 @@ loponop.com
 lsbet.com
 luxcdn.com
 luxup.ru
+lwua9lolq5grq.ru
 m2pub.com
 m6r.eu
 machings.com
@@ -282,15 +293,19 @@ mxpopad.com
 mxttrf.com
 neomion.com
 net.ua
+news.gnezdo.ru
+news.smi2.ru
 ningme.ru
 nn.ru##div[class*="adv"]
 nn.ru##div[class*="banner"]
+nnn.ru
 numbers.md
 odinkod.ru
 onclasrv.com
 onclickads.net
 outbrain.com
 oxn.gerkon.eu
+p8tyh4llv8b86f.ru
 padsdel.com
 padstm.com
 panel100.com
@@ -305,7 +320,11 @@ plista.com
 popads.net
 popunder.js
 popup.min.js
+post.rmbn.ru
 proligtb.com
+prphhwcujc.ru
+psma02.com
+psma03.com
 pubmatic.com
 puhtml.com
 r.casalemedia.com
@@ -337,6 +356,7 @@ rutracker.org/240x400/*
 rvfrm2010.com
 sedo.com
 segmento.ru
+selectornews.com
 servecontent.net
 serving-sys.com
 show_ads
@@ -345,6 +365,7 @@ slikslik.com
 smart-links.ru
 smartadserver.com
 smartclick.me
+smi.ru
 source.mmi.bemobile.ua
 sourcefabric.net
 spadsmedia.com
@@ -353,6 +374,7 @@ sporary.eu
 srvpub.com
 ssl-services.com
 starkcom.net
+static.adv-first.ru
 t.mdn2015x1.com
 t.mdn2015x2.com
 t.mdn2015x3.com
@@ -361,6 +383,7 @@ tacoda.at.atwola.com
 targetix.net
 teasernet.com
 tech4215978.ru
+tech783281.ru
 teracreative.com
 terraclicks.com
 tesel8.com
@@ -376,11 +399,15 @@ tradeadexchange.com
 tradedoubler.com
 trafex.net
 trafficfactory.biz
+traffichaus.com
 trafficjunky.net
 trafficmonsoon.com
+traffim.com
+trafmag.com
 tribalfusion.com
 trkmedia.ollcdn.net
 ttw.tvas-c.pw
+tubecontext.com
 ucoz.net/ads*
 ucoz.net/bnr/*
 utarget.ru
@@ -401,10 +428,12 @@ weborama.fr
 weborama.nl
 weropiy.com
 wlboon.com
+www.jazg97clb.ru
 www.kineshemec.ru##div#news_telo_grey
 www.pinterest.com##div[class="ModalManager Module"]
 www.pinterest.com##div[class="Module Nags centeredWithinWrapper"]
 www.pinterest.com##div[class="ModuleNagBaseNagNoScript"]
+xg.xyu.tv
 xiuuh.com
 xtendmedia.com
 yieldlab.de
