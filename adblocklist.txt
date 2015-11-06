@@ -31,6 +31,7 @@
 28d4cnozozyz.ru
 2gis.ru##article._advWarning
 2gis.ru##div.contextPromo
+2gis.ru##div.dashboard__promo
 2gis.ru##div.firmCard__ads
 2gis.ru##div.firmCard__recoveryAds
 2mdn.info
@@ -152,6 +153,8 @@ cdn.engine.4dsply.com
 cdn.epom.com
 cdn.hgdat.com
 cdn.ml-banners.com
+cdn.mobicow.com
+cdn.popmyads.com
 cdn.taboola.com
 cdn.vipbox.tv
 cdn.vipboxsa.co
@@ -211,6 +214,7 @@ finconst.ru
 firstadvplug.com
 gemius.pl
 genorithm.com
+get.flagagreebelieve.com
 goo.mx
 goodadvert.ru
 googleadservices.com
@@ -318,6 +322,7 @@ platform.twitter.com
 playitviral.com
 plista.com
 popads.net
+popcash.net
 popunder.js
 popup.min.js
 post.rmbn.ru
