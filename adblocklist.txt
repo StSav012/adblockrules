@@ -90,6 +90,7 @@ adsriver.ru
 adsvidsdouble.com
 adtechus.com
 adultadworld.com
+adunit
 adv457895.ru
 adv679854.ru
 advagava.su
@@ -111,6 +112,7 @@ am15.net
 amazon-adsystem.com
 an.yandex.ru
 api.mgtz.ru
+arbomedia.nuggad.net
 ato.mx
 awaps.yandex.net
 awaps.yandex.ru
@@ -127,8 +129,11 @@ baner.*
 banners
 banners.*
 base.kiwi.kz
+bbcdn-bbnaut.ibillboard.com
+bbcdn.go.goldbachpoland.bbelements.com
 bbn.img.com.ua
 begun.ru
+behavioralengine.com
 bet365affiliates.com
 betweendigital.com
 bidswitch.net
@@ -155,6 +160,7 @@ cdn.hgdat.com
 cdn.ml-banners.com
 cdn.mobicow.com
 cdn.popmyads.com
+cdn.revcontent.com
 cdn.taboola.com
 cdn.vipbox.tv
 cdn.vipboxsa.co
@@ -215,12 +221,14 @@ firstadvplug.com
 gemius.pl
 genorithm.com
 get.flagagreebelieve.com
+gonews2.net
 goo.mx
 goodadvert.ru
 googleadservices.com
 googledrive.com
 googlesyndication.com
 googletagservices.com
+googlevideo.com/*redirect*
 googlie.cf
 groovitdigital.com
 grt02.com
@@ -231,9 +239,11 @@ holyclick.ru
 hopfeed.com
 http://195.82.146.52/
 http://forum.ru-board.com/board/temp/
+http://fromfriendswithlove.com/go.js
 http://kineshemec.ru//images/biz_katalog/vbeso/*
 http://kineshemec.ru/images/biz_katalog/vbeso/*
 http://kineshemec.ru/images/zaplatka/*
+http://moevideo.net/mna/
 http://news.vse42.ru/m/b/?a=render*
 http://www.kineshemec.ru/images/biz_katalog/vbeso/*
 http://www.kineshemec.ru/scripts/common.js
@@ -376,6 +386,7 @@ sourcefabric.net
 spadsmedia.com
 speednetwork5.com
 sporary.eu
+srv.bebi.com
 srvpub.com
 ssl-services.com
 starkcom.net
@@ -438,6 +449,9 @@ www.kineshemec.ru##div#news_telo_grey
 www.pinterest.com##div[class="ModalManager Module"]
 www.pinterest.com##div[class="Module Nags centeredWithinWrapper"]
 www.pinterest.com##div[class="ModuleNagBaseNagNoScript"]
+www.youtube.com/annotations_invideo
+www.youtube.com/api/stats/ads
+www.youtube.com/pagead/adview
 xg.xyu.tv
 xiuuh.com
 xtendmedia.com
