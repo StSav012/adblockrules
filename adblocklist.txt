@@ -228,6 +228,7 @@ get.flagagreebelieve.com
 gonews2.net
 goo.mx
 goodadvert.ru
+goodhurt.com
 googleadservices.com
 googledrive.com
 googlesyndication.com
@@ -288,6 +289,8 @@ m2pub.com
 m6r.eu
 machings.com
 madnet.ru
+||mail.ru##div.layout__rightcol
+||mail.ru##div.w-text-banner_outer
 marketgid.com
 mbr-targeting.com
 mc.yandex.ru
@@ -456,10 +459,13 @@ www.pinterest.com##div[class="ModuleNagBaseNagNoScript"]
 www.youtube.com/annotations_invideo
 www.youtube.com/api/stats/ads
 www.youtube.com/pagead/adview
+wwwp.link
+xaxoro.com
 xg.xyu.tv
 xiuuh.com
 xtendmedia.com
 yieldlab.de
+yieldtraffic.com
 yimg.com/*/syndication/*
 yourmine.ru
 yu0123456.com
