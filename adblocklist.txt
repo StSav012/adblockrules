@@ -17,6 +17,7 @@
 ^admatcher.js
 ^adverst.js
 ^advert.js
+^linkad.js
 *.adtarget.me
 ||ad.*
 /SmallAdVipPanel.js
