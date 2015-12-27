@@ -5,6 +5,7 @@
 ##a[href*="adriver"]
 ##a[href*="adverts"]
 ##a[href*="banner"]
+##a[href*="JOY-CAZINO.COM"]
 ##a[href*="send.onenetworkdirect.net"]
 ##div#bottomads
 ##div#rhs
@@ -12,6 +13,8 @@
 ##div#tvcap
 ##div.topad1
 ##div[onclick*="yaCounter"]
+##p[onclick^="window.location='http://shattershotgun.ru/"]
+^admatcher.js
 ^adverst.js
 ^advert.js
 *.adtarget.me
@@ -89,6 +92,7 @@ adservone.com
 adsk2.co
 adspayment.com
 adsriver.ru
+adsrvr.org
 adsvidsdouble.com
 adtechus.com
 adultadworld.com
@@ -151,6 +155,7 @@ c.hit.ua
 c8.net.ua
 carrerst.ru
 cdn-static.liverail.com
+cdn.adhigh.net
 cdn.adnotch.com
 cdn.adrotator.se
 cdn.adsrvmedia.net
@@ -160,11 +165,14 @@ cdn.castplatform.com
 cdn.engine.4dsply.com
 cdn.epom.com
 cdn.hgdat.com
+cdn.krxd.net
 cdn.ml-banners.com
 cdn.mobicow.com
 cdn.popmyads.com
 cdn.revcontent.com
 cdn.taboola.com
+cdn.teads.tv
+cdn.tradelab.fr
 cdn.vipbox.tv
 cdn.vipboxsa.co
 chitika.net
@@ -196,6 +204,7 @@ criteo.com
 crwdcntrl.net
 dataffastguru.info
 de17a.com
+deriversal.com
 developermedia.com
 dfs.digitalaccess.ru
 directadvert.ru
@@ -225,6 +234,7 @@ firstadvplug.com
 gemius.pl
 genorithm.com
 get.flagagreebelieve.com
+get.letilyadothejob.com
 gonews2.net
 goo.mx
 goodadvert.ru
@@ -256,6 +266,7 @@ http://www.nta-nn.ru/upload/bx/*
 https://thevideo.me/js/jspc.js
 https://tpb.la/static/js/ad-scroll.js
 i.holder.com.ua
+i.ligatus.com
 imads.integral-marketing.com
 imgsrv.io
 improvedigital.com
@@ -278,6 +289,7 @@ lcads.ru
 lentainform.com
 litres.ru
 loading-delivery1.com
+loadm.exelator.com
 lollipop-network.com
 lookfornews.net
 loponop.com
@@ -304,6 +316,7 @@ merchenta.com
 metrigo.com
 mgid.com
 microads.ru
+mistands.com
 moatads.com
 morgdm.ru
 mrlmedia.net
@@ -324,6 +337,7 @@ numbers.md
 odinkod.ru
 onclasrv.com
 onclickads.net
+ordingly.com
 outbrain.com
 oxn.gerkon.eu
 p8tyh4llv8b86f.ru
@@ -370,18 +384,23 @@ romilit.com
 rontar.com
 rose.ixbt.com
 rs.mail.ru
+rsc.cdn77.org
 rt.tizerlady.com
 rtbidder.net
+rtd.tubemogul.com
 rubiconproject.com
 rutarget.ru
 rutracker.org/240x400/*
 rvfrm2010.com
+s.pubmine.com
+s.skimresources.com
 sedo.com
 segmento.ru
 selectornews.com
 servecontent.net
 serving-sys.com
 show_ads
+shattershotgun.ru
 silvercdn.com
 slikslik.com
 smart-links.ru
@@ -398,6 +417,9 @@ srvpub.com
 ssl-services.com
 starkcom.net
 static.adv-first.ru
+sync.teads.tv
+sync.tidaltv.com
+t.dtscout.com
 t.mdn2015x1.com
 t.mdn2015x2.com
 t.mdn2015x3.com
@@ -431,8 +453,10 @@ tribalfusion.com
 trkmedia.ollcdn.net
 ttw.tvas-c.pw
 tubecontext.com
+tynt.com
 ucoz.net/ads*
 ucoz.net/bnr/*
+um.simpli.fi
 utarget.ru
 vclicks.net
 viewclc.com
@@ -460,6 +484,7 @@ www.youtube.com/annotations_invideo
 www.youtube.com/api/stats/ads
 www.youtube.com/pagead/adview
 wwwp.link
+x.bidswitch.net
 xaxoro.com
 xg.xyu.tv
 xiuuh.com
