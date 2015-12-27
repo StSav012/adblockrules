@@ -29,7 +29,6 @@
 */adv.*
 */adv/*
 */bnr/*
-! do you see the line below?
 */jwplayeradv/*
 20d625b48e.se
 20dollars2surf.com
