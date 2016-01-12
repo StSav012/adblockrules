@@ -5,6 +5,7 @@
 ##a[href*="adriver"]
 ##a[href*="adverts"]
 ##a[href*="banner"]
+##a[href*="clickson.net"]
 ##a[href*="JOY-CAZINO.COM"]
 ##a[href*="send.onenetworkdirect.net"]
 ##div#bottomads
@@ -14,6 +15,17 @@
 ##div.topad1
 ##div[onclick*="yaCounter"]
 ##p[onclick^="window.location='http://shattershotgun.ru/"]
+! ad.admitad.com
+! ad.dotandad.com
+! ad.theequalground.info
+! ad.turn.com
+! ads.adaptv.advertising.com
+! ads.adk2.com
+! ads.ayads.co
+! ads.daclips.in
+! ads.livetvcdn.net
+! adss.comeadvertisewithus.com
+! с.amazon-adsystem.com
 ^admatcher.js
 ^adverst.js
 ^advert.js
@@ -183,6 +195,7 @@ chokoladsrv.net
 cityads.ru
 clickadu.com
 clickbank.net
+clickson.net
 clicksor.com
 clicktale.net
 clickterra.net
@@ -238,6 +251,7 @@ gemius.pl
 genorithm.com
 get.flagagreebelieve.com
 get.letilyadothejob.com
+go.padstm.com
 gonews2.net
 goo.mx
 goodadvert.ru
@@ -277,6 +291,7 @@ imrk.net
 infolinks.com
 intellitxt.com
 iqok.ru
+js.srcsmrtgs.com
 k8media.com
 kat.cr##div.advertising
 kat.cr##div[class^="_"]
@@ -319,6 +334,7 @@ merchenta.com
 metrigo.com
 mgid.com
 microads.ru
+mintake.com
 mistands.com
 moatads.com
 morgdm.ru
@@ -360,6 +376,7 @@ popcash.net
 popunder.js
 popup.min.js
 post.rmbn.ru
+poundaccordexecute.info
 proligtb.com
 prphhwcujc.ru
 psma02.com
@@ -397,6 +414,8 @@ rutracker.org/240x400/*
 rvfrm2010.com
 s.pubmine.com
 s.skimresources.com
+s.tcimg.com
+sape.ru
 sedo.com
 segmento.ru
 selectornews.com
@@ -422,6 +441,7 @@ starkcom.net
 static.adv-first.ru
 sync.teads.tv
 sync.tidaltv.com
+t.adonly.com
 t.dtscout.com
 t.mdn2015x1.com
 t.mdn2015x2.com
@@ -440,6 +460,7 @@ tisatama.ru
 tizerbank.com
 tlvmedia.com
 top-fwz1.mail.ru
+top10binaryoption.net
 topadvert.ru
 touch1.ru
 tovarro.com
@@ -489,6 +510,7 @@ www.youtube.com/pagead/adview
 wwwp.link
 x.bidswitch.net
 xaxoro.com
+xch.smrtgs.com
 xg.xyu.tv
 xiuuh.com
 xtendmedia.com
