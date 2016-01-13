@@ -1,6 +1,7 @@
 [Adblock Plus 2.0]
 ! my own adblock rules; feel free to discard them
 @@alfabank.ru
+@@i-msdn.sec.s-msft.com
 ##a[href*="adf.ly"]
 ##a[href*="adriver"]
 ##a[href*="adverts"]
@@ -260,6 +261,7 @@ googleadservices.com
 googledrive.com
 googlesyndication.com
 googletagservices.com
+! the following line breaks YouTube video a little; reload a page to watch
 googlevideo.com/*redirect*
 googlie.cf
 groovitdigital.com
