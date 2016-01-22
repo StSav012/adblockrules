@@ -30,6 +30,7 @@
 ^admatcher.js
 ^adverst.js
 ^advert.js
+^dontcopy.js
 ^linkad.js
 *.adtarget.me
 ||ad.*
@@ -125,6 +126,7 @@ advideo.com.ua
 advmaker.net
 advombat.ru
 advon.net
+adwise.agency
 adwolf.ru
 adxplosions.com
 adzerk.net
@@ -134,10 +136,12 @@ amazon-adsystem.com
 an.yandex.ru
 api.mgtz.ru
 arbomedia.nuggad.net
+asopla.com
 ato.mx
 awaps.yandex.net
 awaps.yandex.ru
 b.ex.ua/*/*.swf
+banachpuritanamount.com
 banerator.net
 banner-*.*
 banner
@@ -150,6 +154,7 @@ baner.*
 banners
 banners.*
 base.kiwi.kz
+bb.tidopro.biz
 bbcdn-bbnaut.ibillboard.com
 bbcdn.go.goldbachpoland.bbelements.com
 bbn.img.com.ua
@@ -163,6 +168,7 @@ bnhtml.com
 bodyclick.net
 bounceexchange.com
 brainient.com
+broklam.com
 brucelead.com
 bubblesmedia.ru
 buzzonclick.com
@@ -238,6 +244,7 @@ e2yth.tv
 ekod.info
 engagebdr.com
 espritgames.ru
+et-code.ru
 etarg.ru
 etgdta.com
 europacash.com
@@ -246,9 +253,11 @@ exoclick.com
 f8350e7c1.se
 facebook.com##div[data-ad]
 facebook.com##div[data-ft*="ei"]
+faundop.com
 finconst.ru
 firstadvplug.com
 gemius.pl
+geniosiz.com/
 genorithm.com
 get.flagagreebelieve.com
 get.letilyadothejob.com
@@ -264,6 +273,7 @@ googletagservices.com
 ! the following line breaks YouTube video a little; reload a page to watch
 googlevideo.com/*redirect*
 googlie.cf
+gotriki.com
 groovitdigital.com
 grt02.com
 hgads.com
@@ -343,8 +353,10 @@ morgdm.ru
 mrlmedia.net
 msads.net
 msecdn.net
+msrv.su
 mtrcss.com
 mxpopad.com
+mxtads.com
 mxttrf.com
 neomion.com
 net.ua
@@ -381,8 +393,10 @@ post.rmbn.ru
 poundaccordexecute.info
 proligtb.com
 prphhwcujc.ru
+psma01.com
 psma02.com
 psma03.com
+psmardr.com
 pubmatic.com
 puhtml.com
 r.casalemedia.com
@@ -451,14 +465,18 @@ t.mdn2015x3.com
 t.mdn2015x4.com
 tacoda.at.atwola.com
 targetix.net
+tbn.centercontenta.ru
 teasernet.com
 tech4215978.ru
 tech783281.ru
 teracreative.com
 terraclicks.com
 tesel8.com
+tessom.com
+theodosium.com
 thor-media.ru
 tisatama.ru
+tiz-et.ru
 tizerbank.com
 tlvmedia.com
 top-fwz1.mail.ru
@@ -475,6 +493,7 @@ trafficjunky.net
 trafficmonsoon.com
 traffim.com
 trafmag.com
+traforet.com
 tribalfusion.com
 trkmedia.ollcdn.net
 ttw.tvas-c.pw
