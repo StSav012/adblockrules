@@ -74,6 +74,7 @@ adfox.ru
 adframesrc.com
 adgorithms.com
 adit-media.com
+adjourne.com
 adjs.net
 adk2.co
 adkserve.com
@@ -135,6 +136,7 @@ am15.net
 amazon-adsystem.com
 an.yandex.ru
 api.mgtz.ru
+api.trafficpals.ru
 arbomedia.nuggad.net
 asopla.com
 ato.mx
@@ -289,6 +291,7 @@ http://kineshemec.ru/images/biz_katalog/vbeso/*
 http://kineshemec.ru/images/zaplatka/*
 http://moevideo.net/mna/
 http://news.vse42.ru/m/b/?a=render*
+http://rutracker.org/iframe/
 http://www.kineshemec.ru/images/biz_katalog/vbeso/*
 http://www.kineshemec.ru/scripts/common.js
 http://www.nta-nn.ru/upload/bx/*
@@ -373,6 +376,10 @@ onclickads.net
 ordingly.com
 outbrain.com
 oxn.gerkon.eu
+p.pxl2015x1.com
+p.pxl2015x2.com
+p.pxl2015x3.com
+p.pxl2015x4.com
 p8tyh4llv8b86f.ru
 padsdel.com
 padstm.com
@@ -411,6 +418,7 @@ reclama.*
 recreativ.ru
 reklama.ngs.ru
 reklamonstr.ua
+rev2pub.adk2x.com
 revsci.net
 rhtag.com
 rihana.utte.info
