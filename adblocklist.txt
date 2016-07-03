@@ -10,6 +10,9 @@ e.mail.ru##div[data-ad-state] *
 2gis.ru##a.weather__promoLink
 2gis.ru##div.dashboard__metarubrics
 2gis.ru##div.dashboard__apps
+2gis.ru##article._advWarning
+! todo: check the following
+2gis.ru##div._commercial
 ! yandex
 ##a[onclick*="yaCounter"]
 yandex.ru##div.home-panel-content-view_has-panorama__tip + div
