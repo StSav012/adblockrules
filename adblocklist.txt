@@ -15,6 +15,7 @@ e.mail.ru##div[data-ad-state] *
 2gis.ru##div._commercial
 ! yandex
 ##a[onclick*="yaCounter"]
+##a[href^="//awaps.yandex.ru/"]
 yandex.ru##div.home-panel-content-view_has-panorama__tip + div
 yandex.ru##div.home-panel-content-view_has-panorama__tip
 yandex.ru##div.home-panel-content-view_has-panorama__menu + div
