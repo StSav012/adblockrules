@@ -19,6 +19,8 @@ e.mail.ru##div[data-ad-state] *
 yandex.ru##div.home-panel-content-view_has-panorama__tip + div
 yandex.ru##div.home-panel-content-view_has-panorama__tip
 yandex.ru##div.home-panel-content-view_has-panorama__menu + div
+yandex.ru##div.home-panel-content-view__tip + div
+yandex.ru##div.home-panel-content-view__tip
 ! rp5.ru
 rp5.ru##div.advert-rp5-invite-bottom-picture
 rp5.ru##div.txt_invite_bottom_container
