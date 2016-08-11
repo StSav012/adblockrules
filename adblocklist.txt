@@ -11,7 +11,7 @@ e.mail.ru##div[data-ad-state] *
 2gis.ru##div.dashboard__metarubrics
 2gis.ru##div.dashboard__apps
 2gis.ru##article._advWarning
-! todo: check the following
+2gis.ru##div.card__recoveryAds
 2gis.ru##div._commercial
 ! yandex
 ##a[onclick*="yaCounter"]
