@@ -5,6 +5,7 @@
 // @match			*://*.vk.com/*
 // @copyright		2016, StSav012
 // @author			StSav012
+// @namespace		vkap
 // ==/UserScript==
 
 var actualCode = '(' + function() {
