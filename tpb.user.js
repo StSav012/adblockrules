@@ -6,6 +6,7 @@
 // @copyright		2016, StSav012
 // @author			StSav012
 // @namespace       tpb
+// @run-at          document-end
 // ==/UserScript==
 
 var actualCode = "_wm={};";
