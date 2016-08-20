@@ -2,11 +2,11 @@
 // @name			Get rid of the Pirate Bay pop-under
 // @version			0.1
 // @description		disables the Pirate Bay pop-under
-// @match			*://*.thepiratebay.*/*
+// @include			*://*.thepiratebay.*
 // @copyright		2016, StSav012
 // @author			StSav012
-// @namespace       tpb
-// @run-at          document-end
+// @namespace https://greasyfork.org/users/61331
+// @run-at      document-end
 // ==/UserScript==
 
 var actualCode = "_wm={};";
