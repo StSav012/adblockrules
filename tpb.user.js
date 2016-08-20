@@ -5,7 +5,7 @@
 // @include			*://*.thepiratebay.*
 // @copyright		2016, StSav012
 // @author			StSav012
-// @namespace https://greasyfork.org/users/61331
+// @namespace   tpb-pu
 // @run-at      document-end
 // ==/UserScript==
 
