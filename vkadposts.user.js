@@ -60,7 +60,7 @@ var actualCode = '(' + function() {
 				}
 			}
 		}
-		else if(o>n)
+		else if(o>=n)
 		{
 			for(i = 0; i<n; ++i)						// we assume the dom tree has completely changed, so we check it from the very beginning and to the end
 			{
