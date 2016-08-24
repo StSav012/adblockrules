@@ -24,7 +24,7 @@ var actualCode = '(' + function() {
 		"Центр образовательных технологий Advance",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru",
-		"elementaree.ru"
+		"elementaree.ru", "start-mobile.net"
 	];
 	var n, o=0;
 	function cleanAd()
