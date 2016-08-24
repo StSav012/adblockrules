@@ -19,7 +19,7 @@ var actualCode = '(' + function() {
 		"ЗАКАЖИТЕ", "КУПИТЬ",
 		"Подарок можно забрать",
 		"бизнес-план", "бизнес-проект",
-		"Читать продолжение в источнике", "Смотреть ответ в источнике",
+		"Читать продолжение в источнике", "Смотреть ответ в источнике", "олько для участников сообщества",
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club",
 		"Центр образовательных технологий Advance",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
