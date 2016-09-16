@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.2-20160915
+// @version         0.2-20160916
 // @description	    removes ad posts from groups by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -11,8 +11,8 @@
 
 var actualCode = '(' + function() {
 	var keywords = [
-		"РЕПОСТ", "делать репост", "дeлaйтe рeпoст", "делай репост", "репост этой записи",
-		"ступите в группу",
+		"РЕПОСТ", "делать репост", "дeлaйтe рeпoст", "делай репост", "репост этой записи", "REPOST",
+		"ступите в группу", "ступите в нашу группу", "ступаем в группу",
 		"Регистрация всего за",
 		"бесплатно дадим", "БЕСПЛАТН", "Получить бесплатн", "ПОДАРОК",
 		"ВЫИГРАЙ", "КОНКУРС", "Мега-Акция", "АКЦИЯ",
@@ -20,7 +20,7 @@ var actualCode = '(' + function() {
 		"ЗАКАЖИТЕ", "КУПИТЬ", "Заказать можно тут",
 		"Подарок можно забрать",
 		"бизнес-план", "бизнес-проект",
-		"Читать продолжение в источнике", "Смотреть ответ в источнике", "олько для участников сообщества",
+		"Читать продолжение в источнике", "Смотреть ответ в источнике", "олько для участников сообщества", "Читай продолжение здесь",
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club",
 		"Центр образовательных технологий Advance",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
@@ -30,8 +30,7 @@ var actualCode = '(' + function() {
 	var n;
 	function cleanAd()
 	{
-		var divs = document.querySelectorAll("div._post, div.feed_row");
-		//		var divs = document.querySelectorAll("div.post_content");
+		var divs = document.querySelectorAll("div._post, div.feed_row, div.wall_item");
 		n = divs.length;
 		var i, j;
 		for(i = 0; i<n; ++i)						// we check it from the very beginning and to the end
@@ -56,7 +55,8 @@ var actualCode = '(' + function() {
 		}
 	}
 	cleanAd();
-	document.querySelector('div#page_body').addEventListener('DOMNodeInserted', cleanAd);
+	document.querySelector('div#page_body, div.upanel').addEventListener('DOMNodeInserted', cleanAd);
+	// div.upanel is for m.vk.com
 } + ')();';
 var script = document.createElement('script');
 script.textContent = actualCode;
