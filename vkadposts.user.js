@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20160916
+// @version         0.3.20160917
 // @description	    removes ad posts from groups by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
