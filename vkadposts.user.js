@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20160923
+// @version         0.3.20160926
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -12,7 +12,7 @@
 var actualCode = '(' + function() {
 	var keywords = [
 		"РЕПОСТ", "делать репост", "делать \"репост\"", "дeлaйтe рeпoст", "делай репост", "репост этой записи", "REPOST", "оделиться записью",
-		"лайки и репосты записи", "озыгрыш по репосту", "репоснет эту запись",
+		"лайки и репосты записи", "озыгрыш по репосту", "репоснет эту запись", "за репост даем",
 		"ступите в группу", "ступите в нашу группу", "ступаем в группу", "ыть участником группы", "ступайте в группу",
 		"Регистрация всего за",
 		"бесплатно дадим", "БЕСПЛАТН", "Получить бесплатн", "ПОДАРОК", "СКИДКА",
@@ -24,7 +24,7 @@ var actualCode = '(' + function() {
 		"Читать продолжение в источнике", "Смотреть ответ в источнике", "олько для участников сообщества", "Читай продолжение здесь", "Читать продолжение и смотреть ответы",
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club",
 		"Центр образовательных технологий Advance",
-		"Начни играть тут",
+		"Начни играть тут", "Победители будут выбраны случайным образом",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru",
 		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф",
