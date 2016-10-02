@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20160930
+// @version         0.3.20161002
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -23,7 +23,7 @@ var actualCode = '(' + function() {
 		"бизнес-план", "бизнес-проект",
 		"Читать продолжение в источнике", "Смотреть ответ в источнике", "олько для участников сообщества", "Читай продолжение здесь",
 		"Читать продолжение и смотреть ответы", "Узнать подробности в источнике",
-		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
+		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen", "/vkchydaku",
 		"Центр образовательных технологий Advance",
 		"Начни играть тут", "Победители будут выбраны случайным образом", "победитель будет выбран случайным образом",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
