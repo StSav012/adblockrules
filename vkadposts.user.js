@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20161010
+// @version         0.3.20161013
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -22,6 +22,7 @@ var actualCode = '(' + function() {
 		"Последняя распродажа топовых",
 		"Подпишись", "подпишитесь на", "Подписывайся на", "Быть подписчиком", "Быть подписанным", "быть подписанным",
 		"Подписывайтесь - ", "Подписаться на группу",  "одписывайтесь на группу", "подписывайтесь на ", "Подписаться +",
+		"Подписаться на канал можно здесь",
 		"ЗАКАЖИТЕ", "КУПИТЬ", "Заказать можно тут", 
 		"Подарок можно забрать", "Вы сможете забрать ваш подарок", "Быстрая доставка по ",
 		"бизнес-план", "бизнес-проект",
@@ -29,7 +30,7 @@ var actualCode = '(' + function() {
 		"Читай продолжение здесь", "Подробнее здесь", "Ты должен видеть это",
 		"Читать продолжение и смотреть ответы", "Узнать подробности в источнике",
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
-		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs3",
+		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs",
 		"Центр образовательных технологий Advance",
 		"Начни играть тут", "Победители будут выбраны случайным образом", "победитель будет выбран случайным образом",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
