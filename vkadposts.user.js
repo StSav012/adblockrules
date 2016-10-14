@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20161014
+// @version         0.3.20161014.2
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -16,7 +16,7 @@ var actualCode = '(' + function() {
 		"ступите в группу", "ступите в нашу группу", "ступаем в группу", "ыть участником группы", "ступайте в группу",
 		"Вступай в группу",
 		"Зайди поглазеть на эти посты",
-		"Регистрация всего за",
+		"Регистрация всего за", "Оставьте заявку",
 		"бесплатно дадим", "БЕСПЛАТН", "Получить бесплатн", "ПОДАРОК", "СКИДКА", "Выбирай со скидкой",
 		"ВЫИГРАЙ", "получи шанс выиграть", "КОНКУРС", "Мега-Акция", "АКЦИЯ",
 		"Ссылка на розыгрыш", "в сообществе проходит супер-розыгрыш", "участвуйте в розыгрыше",
@@ -37,7 +37,7 @@ var actualCode = '(' + function() {
 		"Начни играть тут", "Победители будут выбраны случайным образом", "победитель будет выбран случайным образом",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru", "bright-shopping.ru",
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru",
-		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф", "printbar.ru",
+		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф", "printbar.ru", "tracking.leaddealer.net",
 		"app_title_"	// that's to avoid ads from games
 	];
 	var n;		// length of selected tags list
