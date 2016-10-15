@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20161015.3
+// @version         0.3.20161015.4
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -28,7 +28,7 @@ var actualCode = '(' + function() {
 		"ЗАКАЖИТЕ", "КУПИТЬ", "Заказать можно тут", 
 		"Подарок можно забрать", "Вы сможете забрать ваш подарок", "Быстрая доставка по ",
 		"бизнес-план", "бизнес-проект",
-		"Читать продолжение ", "Смотреть ответ в источнике", "олько для участников сообщества",
+		"Читать продолжение ", "Читaйтe пoлнocтью здecь", "Смотреть ответ в источнике", "олько для участников сообщества",
 		"Подробнее здесь", "Ты должен видеть это", "Ты должен это видеть", "Узнать подробности в источнике",
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
 		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs",
