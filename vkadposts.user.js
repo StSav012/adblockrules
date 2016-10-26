@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20161026
+// @version         0.3.20161026.2
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -36,7 +36,7 @@ var actualCode = '(' + function() {
 		"Центр образовательных технологий Advance",
 		"Начни играть тут", "Победители будут выбраны случайным образом", "победитель будет выбран случайным образом",
 		"NovaPizza.ru", "skypeteach.ru", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com", "befree-school.ru",
-		"bright-shopping.ru", ".sale-gooods.ru",
+		"bright-shopping.ru", ".sale-gooods.ru", "www.kopikot.ru",
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru", "artskills.ru",
 		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф", "printbar.ru", "tracking.leaddealer.net", "envylab.ru",
 		"app_title_"	// that's to avoid ads from games
