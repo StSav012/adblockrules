@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20161029
+// @version         0.4.20161029
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -68,7 +68,7 @@ var actualCode = '(' + function() {
 					}
 					for(k=0; k<urls.length; ++k)
 					{
-						if((content.document.location.indexOf(urls[k])==-1)&&(d.innerHTML.includes(urls[k])))
+						if((window.location.pathname.indexOf(urls[k])==-1)&&(d.innerHTML.includes(urls[k])))
 						{
 							//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
 							d.parentNode.removeChild(d);
