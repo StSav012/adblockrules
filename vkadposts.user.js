@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.3.20161028.2
+// @version         0.3.20161029
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
 // @author          StSav012
 // @namespace       vkap
-// @run-at          document-end
+// @run-at          document-idle
 // ==/UserScript==
 
 var actualCode = '(' + function() {
@@ -18,7 +18,7 @@ var actualCode = '(' + function() {
 		"ступайте в группу", "Вступай",
 		"Зайди поглазеть на эти посты",
 		"Регистрация всего за", "Оставьте заявку", "Регистрация пока бесплатна",
-		"бесплатно дадим", "БЕСПЛАТН", "Получить бесплатн", "ПОДАРОК", "СКИДКА", "СКИДКОЙ", "Выбирай со скидкой",
+		"бесплатно дадим", "БЕСПЛАТН", "Получить бесплатн", "ПОДАРОК", "СКИДКА", "СКИДКОЙ", "Выбирай со скидкой", "с нереальными скидками",
 		"ВЫИГРАЙ", "получи шанс выиграть", "КОНКУРС", "Мега-Акция", "АКЦИЯ", "Внимание! Конкурс!",
 		"Ссылка на розыгрыш", "в сообществе проходит супер-розыгрыш", "участвуйте в розыгрыше", "РОЗЫГРЫШ",
 		"Последняя распродажа топовых", "Ликвидация склада",
@@ -31,8 +31,6 @@ var actualCode = '(' + function() {
 		"бизнес-план", "бизнес-проект",
 		"Читать продолжение ", "Читaйтe пoлнocтью здecь", "Смотреть ответ в источнике", "олько для участников сообщества",
 		"Подробнее здесь", "Ты должен видеть это", "Ты должен это видеть", "Узнать подробности в источнике",
-		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
-		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch",
 		"Центр образовательных технологий Advance",
 		"Начни играть тут", "Победители будут выбраны случайным образом", "победитель будет выбран случайным образом",
 		"NovaPizza.ru", "skypeteach.ru", "english4now.com", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com",
@@ -41,9 +39,13 @@ var actualCode = '(' + function() {
 		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф", "printbar.ru", "tracking.leaddealer.net", "envylab.ru",
 		"app_title_"	// that's to avoid ads from games
 	];
+	var urls = [
+		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
+		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch"
+	];
 	var n;		// length of selected tags list
 	var d;		// DOM item
-	var i, j;	// just iterators
+	var i, j, k;	// just iterators
 	function cleanAd()
 	{
 		var divs = document.querySelectorAll("div._post, div.feed_row, div.wall_item");
@@ -64,7 +66,16 @@ var actualCode = '(' + function() {
 							break;
 						}
 					}
-					if(j>=keywords.length)
+					for(k=0; k<urls.length; ++k)
+					{
+						if((content.document.location.indexOf(urls[k])==-1)&&(d.innerHTML.includes(urls[k])))
+						{
+							//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
+							d.parentNode.removeChild(d);
+							break;
+						}
+					}
+					if((j>=keywords.length) && (k>=urls.length))
 					{
 						d.setAttribute('no_ad', 'true');
 					}
