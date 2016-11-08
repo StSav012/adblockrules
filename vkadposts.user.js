@@ -87,7 +87,7 @@ var actualCode = '(' + function() {
 						}
 						for(k=0; k<urls.length; ++k)
 						{
-							if((window.location.pathname.indexOf(urls[k])==-1)&&(d.innerHTML.includes(urls[k])))
+							if(window.location.pathname.includes(urls[k]) && d.innerHTML.includes(urls[k]))
 							{
 								//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
 								d.parentNode.removeChild(d);
