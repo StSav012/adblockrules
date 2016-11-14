@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.5.20161112.1
+// @version         0.5.20161114.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -20,10 +20,11 @@ var actualCode = '(' + function() {
 		"озыгрыш по репосту", "репоснет эту запись", "за репост даем", "бонус за репост",
 		"ступите в группу", "ступите в нашу группу", "ступаем в группу", "ступайте в группу", "Вступай",
 		"ыть участником", "ыть подписчиком", "ыть нашим подписчиком",
+		"Добавляйся в друзья",
 		"Зайди поглазеть на эти посты",
-		"Оставьте заявку", "Оставь заявку",
+		"Оставьте заявку", "Оставь заявку", "ОСТАВЬ ЗАЯВКУ", "оставь заявку",
 		"Регистрация всего за", "Регистрация пока бесплатна", "Успей зарегистрироваться",
-		"БЕСПЛАТН", "бесплатно дадим", "Получить бесплатн",
+		"БЕСПЛАТН", "бесплатно дадим", "Получить бесплатн", "бесплатно откроем Вам",
 		"ПОДАРОК",
 		"СКИДКА", "СКИДКОЙ", "Выбирай со скидкой", "с нереальными скидками",
 		"ВЫИГРАЙ", "получи шанс выиграть",
@@ -53,7 +54,7 @@ var actualCode = '(' + function() {
 	];
 	var urls = [
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
-		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch"
+		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch", "/artihard", "/kulinarka", "/skyeng"
 	];
 	var selectors = [
 		"div.reply",
@@ -87,7 +88,7 @@ var actualCode = '(' + function() {
 						}
 						for(k=0; k<urls.length; ++k)
 						{
-							if(window.location.pathname.includes(urls[k]) && d.innerHTML.includes(urls[k]))
+							if(!window.location.pathname.includes(urls[k]) && d.innerHTML.includes(urls[k]))
 							{
 								//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
 								d.parentNode.removeChild(d);
