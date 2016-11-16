@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.5.20161116.1
+// @version         0.5.20161117.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -21,7 +21,7 @@ var actualCode = '(' + function() {
 		"ступите в группу", "ступите в нашу группу", "ступаем в группу", "ступайте в группу", "Вступай",
 		"ыть участником", "ыть подписчиком", "ыть нашим подписчиком",
 		"Добавляйся в друзья",
-		"Зайди поглазеть на эти посты",
+		"Зайди поглазеть на эти посты", "Заходи на раздачу",
 		"Оставьте заявку", "Оставь заявку", "ОСТАВЬ ЗАЯВКУ", "оставь заявку",
 		"Регистрация всего за", "Регистрация пока бесплатна", "Успей зарегистрироваться",
 		"БЕСПЛАТН", "бесплатно дадим", "Получить бесплатн", "бесплатно откроем Вам",
@@ -55,7 +55,7 @@ var actualCode = '(' + function() {
 	var urls = [
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
 		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch", "/artihard", "/kulinarka", "/skyeng",
-		"/princapioff"
+		"/princapioff", "/illusthigh"
 	];
 	var selectors = [
 		"div.reply",
