@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.5.20161127.1
+// @version         0.5.20161127.2
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -47,7 +47,7 @@ var actualCode = '(' + function() {
 		"ереходите по ссылке", "Условия акции можно найти здесь", "смотреть дальше", "больше подробностей внутри",
 		"Подробности акции на странице", "Узнать подробнее",
 		"Центр образовательных технологий Advance",
-		"Начни играть тут", "начни играть в",
+		"Начни играть тут", "начни играть в", "Играй тут",
 		"NovaPizza.ru", "skypeteach.ru", "english4now.com", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com",
 		"befree-school.ru", "bright-shopping.ru", ".sale-gooods.ru", "www.kopikot.ru", ".bebetter.guru", "www.in-build.ru",
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru", "artskills.ru",
