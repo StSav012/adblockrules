@@ -29,4 +29,39 @@ rp5.ru##a[href^="https://txt.rp5.ru/?AdvertMgmt"]
 ! 4pda.ru
 4pda.ru##body>div:first-child:not(#ipbwrapper)
 ! other
-www.svrsqqtj.com
+! random 12-letter names and .com
+blprkaomvazv.com
+btbapoifsphl.com
+kqsipdhvcejx.com
+krovrhmqgupd.com
+popzkvfimbox.com
+riaetcuycxjz.com
+spfrlpjmvkmq.com
+vkdbvgcawubn.com
+xcakezoqgkmj.com
+xseczkcysdvc.com
+zmbrweqglexv.com
+! not quite random but still 8-letter names and .com
+dryicons.com
+piercial.com
+svrsqqtj.com
+teraxhif.com
+!
+lamalama.top
+thisfunctionisnotavailablenow.xyz
+! tv players
+vipbox.top###bannerInCenter
+vipbox.top###hiddenBannerCanvas
+www.newzion02.top###floatLayer1
+www.ruplo.info###advertisement
+www.ruplo.info###adsframe
+www.ruplo.info###over-large
+www.ruplo.info###over-small
+www.ruplo.info###reklama
+bro.adca.st##.advertisement
+wizhdsports.to###floatLayer1
+firstsrow.eu###hiddenBannerCanvas
+firstsrow.eu###bannerInCenter
+! must be common
+*/pu.js
+*/flash_popunder.js
