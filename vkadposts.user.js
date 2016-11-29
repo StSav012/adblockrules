@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.5.20161127.2
+// @version         0.5.20161129.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -27,7 +27,7 @@ var actualCode = '(' + function() {
 		"ЗАПИШИСЬ НА ",
 		"БЕСПЛАТН", "бесплатно дадим", "Получить бесплатн", "бесплатно откроем Вам",
 		"ПОДАРОК",
-		"СКИДКА", "СКИДКОЙ", "Выбирай со скидкой", "с нереальными скидками", "Заказатъ со скидкой",
+		"СКИДКА", "СКИДКОЙ", "Выбирай со скидкой", "с нереальными скидками", "Заказатъ со скидкой", "дарим скидку",
 		"ВЫИГРАЙ", "получи шанс выиграть",
 		"КОНКУРС", "Внимание! Конкурс!",
 		"АКЦИЯ", "Мега-Акция", "Акция до конца", "#акция",
@@ -45,7 +45,7 @@ var actualCode = '(' + function() {
 		"Читать продолжение ", "Читaйтe пoлнocтью здecь", "Смотреть ответ в источнике", "олько для участников сообщества",
 		"Подробнее здесь", "смотрите по ссылке", "Ты должен видеть это", "Ты должен это видеть", "Узнать подробности в источнике",
 		"ереходите по ссылке", "Условия акции можно найти здесь", "смотреть дальше", "больше подробностей внутри",
-		"Подробности акции на странице", "Узнать подробнее",
+		"Подробности акции на странице", "Узнать подробнее", "Узнай подробнее",
 		"Центр образовательных технологий Advance",
 		"Начни играть тут", "начни играть в", "Играй тут",
 		"NovaPizza.ru", "skypeteach.ru", "english4now.com", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com",
@@ -58,7 +58,7 @@ var actualCode = '(' + function() {
 	var urls = [
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
 		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch", "/artihard", "/kulinarka", "/skyeng",
-		"/princapioff", "/illusthigh"
+		"/princapioff", "/illusthigh", "/chestnoeauto"
 	];
 	var selectors = [
 		"div.reply",
