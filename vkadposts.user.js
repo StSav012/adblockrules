@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.5.20161212.1
+// @version         0.5.20161212.2
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -30,7 +30,8 @@ var actualCode = '(' + function() {
 		"БЕСПЛАТН", "бесплатно дадим", "Получить бесплатн", "бесплатно откроем Вам",
 		"качать бесплатно",
 		"ПОДАРОК",
-		"СКИДКА", "СКИДКОЙ", "Выбирай со скидкой", "с нереальными скидками", "дарим скидку", "За репост скидка",
+		"СКИДКА", "СКИДКОЙ", "Выбирай со скидкой", "с нереальными скидками", "дарим скидку",
+		"За репост скидка",
 		"Заказатъ со скидкой", "Заказывайте со скидкой",
 		"ВЫИГРАЙ", "получи шанс выиграть",
 		"КОНКУРС", "Внимание! Конкурс!",
@@ -68,7 +69,7 @@ var actualCode = '(' + function() {
 	];
 	var selectors = [
 		"div.reply",
-		"div._post, div.feed_row, div.wall_item"
+		"div.feed_row, div.wall_item"
 	];
 	var divs;	// selected tags list
 	var n;		// length of the list
