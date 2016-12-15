@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.5.20161213.1
+// @version         0.5.20161215.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -54,7 +54,7 @@ var actualCode = '(' + function() {
 		"Подробности акции на странице", "знать подробнее", "знай подробнее", "Узнай как тут", // ← facepalm
 		"Центр образовательных технологий Advance",
 		"«Как развить свою память» или «Секреты эффективного обучения»",
-		"Начни играть тут", "начни играть в", "Играй тут",
+		"Начни играть тут", "начни играть в", "Играй тут", "Качай игру",
 		"NovaPizza.ru", "skypeteach.ru", "english4now.com", "advance-club.ru", "sdelano.ru", "edgarkulikov.ru", "citystarwear.com",
 		"befree-school.ru", "bright-shopping.ru", ".sale-gooods.ru", "www.kopikot.ru", ".bebetter.guru", "www.in-build.ru",
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru", "artskills.ru",
@@ -69,7 +69,7 @@ var actualCode = '(' + function() {
 	];
 	var selectors = [
 		"div.reply",
-		"div.feed_row, div.wall_item"
+		"div.feed_row, div.wall_item, div.post_copy"
 	];
 	var divs;	// selected tags list
 	var n;		// length of the list
