@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.6.20161218.1
+// @version         0.6.20161221.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @copyright       2016, StSav012
@@ -69,7 +69,7 @@ var actualCode = '(' + function() {
 	];
 	var selectors = [
 		"div.reply",
-		"div.feed_row, div.wall_item, div.post_copy, div.post_fixed, div.page_block"
+		"div.feed_row, div.wall_item, div.post_copy, div.post_fixed, div#page_wall_posts>div.page_block"
 	];
 	var divs;	// selected tags list
 	var n;		// length of the list
