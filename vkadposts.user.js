@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name            Remove ad posts @VK
-// @version         0.6.20161221.1
+// @version         0.6.20161221.2
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
+// @grant           none
 // @copyright       2016, StSav012
 // @author          StSav012
 // @namespace       vkap
