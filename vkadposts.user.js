@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20170106.1
+// @version         0.6.20170115.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -22,7 +22,7 @@ var actualCode = '(' + function() {
 		"озыгрыш по репосту", "репоснет эту запись", "за репост даем", "бонус за репост",
 		"ВСТУПАЙ(ТЕ|)", "ступ(аем|ите|айте|ай) в( нашу|) группу",
 		"(В|в)ступить в (группу|сообщество)", "(В|в)ступай",
-		"ыть( нашим|) (подписчиком|участником)",
+		"БЫТЬ ПОДПИСАННЫМ НА СООБЩЕСТВО", "ыть( нашим|) (подписчиком|участником)",
 		"ДОБАВЬ", "ДОБАВЛЯЙТЕ", "обавляйся в друзья", "обавляйтесь в друзья", "добавляйся ко мне в друзья",
 		"Зайди поглазеть на эти посты", "Заходи на раздачу",
 		"ОСТАВЬ ЗАЯВКУ", "Оставь заявку", "оставь заявку", "Оставьте заявку",
@@ -61,12 +61,13 @@ var actualCode = '(' + function() {
 		"1media-buyer.ru", "itunes.apple.com%2Fapp%2Fapple-store%2Fid695634432", "sale-stop.ru", "offersboard.ru", "artskills.ru",
 		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф", "printbar.ru", "tracking.leaddealer.net", "envylab.ru",
 		"job.beeline.ru",
+		"class=\"wall_marked_as_ads\"",	// to avoid ads from groups
 		"app_title_"	// that's to avoid ads from games
 	];
 	var urls = [
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
 		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch", "/artihard", "/kulinarka", "/skyeng",
-		"/princapioff", "/illusthigh", "/chestnoeauto"
+		"/princapioff", "/illusthigh", "/chestnoeauto", "/otdamdarom"
 	];
 	var selectors = [
 		"div.reply",
