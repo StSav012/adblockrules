@@ -26,6 +26,8 @@ rp5.ru##div.advert-rp5-invite-bottom-picture
 rp5.ru##div.txt_invite_bottom_container
 rp5.ru##div.txt_invite_right_container
 rp5.ru##a[href^="https://txt.rp5.ru/?AdvertMgmt"]
+! sportbox.ru
+news.sportbox.ru##a.right_banner
 ! 4pda.ru
 4pda.ru##body>div:first-child:not(#ipbwrapper)
 ! other
