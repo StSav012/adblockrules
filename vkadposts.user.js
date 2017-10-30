@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20171025.1
+// @version         0.6.20171030.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -10,7 +10,10 @@
 // @run-at          document-idle
 // ==/UserScript==
 
+"use strict";
+
 var actualCode = '(' + function() {
+	"use strict";
 	var keywords = [
 		"РЕПОСТ", "REPOST",
 		"д(е|e)л(а|a)ть (|\")(р|p)(е|e)п(о|o)(с|c)т(|\")", "д(е|e)л(а|a)й(т|)(е|e|) (|\")(р|p)(е|e)п(о|o)(с|c)т(|\")", "делавшему (|\")(р|p)(е|e)п(о|o)(с|c)т(|\")",
