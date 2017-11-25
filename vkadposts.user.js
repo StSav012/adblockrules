@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20171030.1
+// @version         0.6.20171125.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -70,6 +70,7 @@ var actualCode = '(' + function() {
 		"job.beeline.ru",
 		"newstockgeneration.space", "zarabotays.ru", "zarabotoki.ru", "zarabotokgames.ru", ".advertapp.ru",	// suspicious sites
 		"class=\"wall_marked_as_ads\"",	// to avoid ads from groups
+		//"ads_promoted_post",	// to avoid promoted posts; reused later
 		"app_title_"	// that's to avoid ads from games
 	];
 	var urls = [
@@ -81,11 +82,15 @@ var actualCode = '(' + function() {
 		"div.reply",
 		"div.feed_row, div.wall_item, div.post_copy, div.post_fixed, div#page_wall_posts>div.page_block"
 	];
-	var divs;	// selected tags list
-	var n;		// length of the list
-	var d;		// a DOM item
-	var h, i, j, k;	// just iterators
+	var dom_ad = [	// beware: these rules might break the site
+		"div.ads_ad_box",
+		"div[data-ad-block-uid]"
+	];
 	function cleanAd() {
+		var divs;	// selected tags list
+		var n;		// length of the list
+		var d;		// a DOM item
+		var h, i, j, k;	// just iterators
 		for (h = 0; h < selectors.length; ++h) {
 			divs = document.querySelectorAll(selectors[h]);
 			n = divs.length;
@@ -114,6 +119,14 @@ var actualCode = '(' + function() {
 						}
 					}
 				}
+			}
+		}
+		for (h = 0; h < dom_ad.length; ++h) {
+			divs = document.querySelectorAll(dom_ad[h]);
+			n = divs.length;
+			for (i = 0; i < n; ++i) {
+				d = divs[i];
+				d.parentNode.removeChild(d);
 			}
 		}
 	}
