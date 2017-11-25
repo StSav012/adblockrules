@@ -13,11 +13,12 @@
 "use strict";
 
 var actualCode = '(' + function() {
+	"use strict";
 	var x = document.querySelectorAll("a[class='header__close js-close']");
-  if (x.length == 1) {
-    window.location = x[0].href;
-  }
-  return;
+	if (x.length == 1) {
+		window.location = x[0].href;
+	}
+	return;
 } + ')();';
 var script = document.createElement('script');
 script.textContent = actualCode;
