@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20171125.1
+// @version         0.6.20171125.2
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -86,11 +86,11 @@ var actualCode = '(' + function() {
 		"div.ads_ad_box",
 		"div[data-ad-block-uid]"
 	];
+	var divs;	// selected tags list
+	var n;		// length of the list
+	var d;		// a DOM item
+	var h, i, j, k;	// just iterators
 	function cleanAd() {
-		var divs;	// selected tags list
-		var n;		// length of the list
-		var d;		// a DOM item
-		var h, i, j, k;	// just iterators
 		for (h = 0; h < selectors.length; ++h) {
 			divs = document.querySelectorAll(selectors[h]);
 			n = divs.length;
@@ -139,8 +139,8 @@ var actualCode = '(' + function() {
 		return function(obj, callback) {
 			if (MutationObserver) {
 				// define a new observer
-				var obs = new MutationObserver(function(mutations, observer) {
-					if(mutations[0].addedNodes.length || mutations[0].removedNodes.length) {
+				var obs = new MutationObserver(function(mutations) {
+					if (mutations[0].addedNodes.length || mutations[0].removedNodes.length) {
 						callback();
 					}
 				});
