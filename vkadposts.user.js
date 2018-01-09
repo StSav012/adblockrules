@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20171223.1
+// @version         0.6.20180109.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -91,46 +91,42 @@ var actualCode = '(' + function() {
 		"div[data-ad-block-uid]"
 	];
 	var divs;	// selected tags list
-	var n;		// length of the list
-	var d;		// a DOM item
-	var h, i, j, k;	// just iterators
 	function cleanAd() {
-		for (h = 0; h < selectors.length; ++h) {
-			divs = document.querySelectorAll(selectors[h]);
-			n = divs.length;
-			for (i = 0; i < n; ++i) {				// we check it from the very beginning and to the end
-				d = divs[i];
+		for (let s of selectors) {
+			divs = document.querySelectorAll(s);
+			for (let d of divs) {				// we check it from the very beginning and to the end
 				if (d.getAttribute('no_ad') != 'true') {	// from https://greasyfork.org/ru/scripts/1978-vk-com-no-politic-feed/code
 					// does it worth checking the post?
-					for (j = 0; j < keywords.length; ++j) {
-						var pattern = new RegExp(keywords[j]);
+					var eliminated = false;
+					for (let w of keywords) {
+						var pattern = new RegExp(w);
 						if (pattern.test(d.innerHTML)) {
 							//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
 							d.parentNode.removeChild(d);
+							eliminated = true;
 							break;
 						}
 					}
-					for (k = 0; (j >= keywords.length) && (k < urls.length); ++k) {
-						if (!window.location.pathname.includes(urls[k]) && d.innerHTML.includes(urls[k])) {
-							//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
-							d.parentNode.removeChild(d);
-							break;
+					if (!eliminated) {
+						for (let u of urls) {
+							if (!window.location.pathname.includes(u) && d.innerHTML.includes(u)) {
+								//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
+								d.parentNode.removeChild(d);
+								eliminated = true;
+								break;
+							}
 						}
 					}
-					if ((j >= keywords.length) && (k >= urls.length)) {
-						if(d.querySelector("span.wall_copy_more") === null) {
-							d.setAttribute('no_ad', 'true');
-						}
+					if (!eliminated && d.querySelector("span.wall_copy_more") === null) {
+						d.setAttribute('no_ad', 'true');
 					}
 				}
 			}
 		}
-		for (h = 0; h < dom_ad.length; ++h) {
-			divs = document.querySelectorAll(dom_ad[h]);
-			n = divs.length;
-			for (i = 0; i < n; ++i) {
-				d = divs[i];
-				d.parentNode.removeChild(d);
+		for (let a of dom_ad) {
+			divs = document.querySelectorAll(a);
+			for (let ad of divs) {
+				ad.parentNode.removeChild(ad);
 			}
 		}
 	}
@@ -158,10 +154,8 @@ var actualCode = '(' + function() {
 		};
 	})();
 	var containers = document.querySelectorAll('body');
-	n = containers.length;
-	for (i = 0; i < n; ++i) {
-		d = containers[i];
-		observeDOM(d, cleanAd);
+	for (let c of containers) {
+		observeDOM(c, cleanAd);
 	}
 } + ')();';
 var script = document.createElement('script');
