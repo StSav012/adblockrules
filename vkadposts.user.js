@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20180119.1
+// @version         0.6.20180316.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -73,7 +73,7 @@ var actualCode = '(' + function() {
 		"elementaree.ru", "start-mobile.net", ".hitnsale.ru", "вконкурс.рф", "printbar.ru", "tracking.leaddealer.net", "envylab.ru",
 		"job.beeline.ru",
 		"newstockgeneration.space", "zarabotays.ru", "zarabotoki.ru", "zarabotokgames.ru", ".advertapp.ru",	// suspicious sites
-		"class=\"wall_marked_as_ads\"",	// to avoid ads from groups
+		"class=\"wall_marked_as_ads\"",	"class=\"pi_signed ads_mark\"",// to avoid ads from groups
 		//"ads_promoted_post",	// to avoid promoted posts; reused later
 		"app_title_"	// that's to avoid ads from games
 	];
