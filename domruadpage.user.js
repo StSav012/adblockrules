@@ -14,7 +14,7 @@
 
 var actualCode = '(' + function() {
 	"use strict";
-	var x = document.querySelectorAll("a.header__close.js-close, a.close");
+	var x = document.querySelectorAll("a.header__close.js-close, a.close, a.links_skip");
 	if (x.length == 1) {
 		window.location = x[0].href;
 	}
