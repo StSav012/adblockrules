@@ -81,9 +81,9 @@ var actualCode = '(' + function() {
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
 		"/vkchydaku", "/brandclubkiiik", "/princapioff", "/illusthigh", "/chestnoeauto", "/otdamdarom"
 	];
-    var banned_reposts_from = [				// no reposts by these groups and users are shown
-        "/rhymesee"
-    ];
+	var banned_reposts_from = [         // no reposts by these groups and users are shown
+		"/rhymesee"
+	];
 	var selectors = [
 		"div.reply",
 		"div.feed_row, div.wall_item, div.post_copy, div.post_fixed, div#page_wall_posts>div.page_block"
