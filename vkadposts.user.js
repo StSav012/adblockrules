@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.6.20180316.2
+// @version         0.7.20180507.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -79,9 +79,11 @@ var actualCode = '(' + function() {
 	];
 	var urls = [
 		"/domavern", "/businessstrategy", "/virashopru", "/tri10oe", "/kinona5", "/watson_club", "/brutal_kitchen",
-		"/vkchydaku", "/brandclubkiiik", "/web_highlights_kurs", "/tatoo_sketch", "/artihard", "/kulinarka", "/skyeng",
-		"/princapioff", "/illusthigh", "/chestnoeauto", "/otdamdarom"
+		"/vkchydaku", "/brandclubkiiik", "/princapioff", "/illusthigh", "/chestnoeauto", "/otdamdarom"
 	];
+    var banned_reposts_from = [				// no reposts by these groups and users are shown
+        "/rhymesee"
+    ];
 	var selectors = [
 		"div.reply",
 		"div.feed_row, div.wall_item, div.post_copy, div.post_fixed, div#page_wall_posts>div.page_block"
@@ -102,7 +104,8 @@ var actualCode = '(' + function() {
 					for (let w of keywords) {
 						var pattern = new RegExp(w);
 						if (pattern.test(d.innerHTML)) {
-							//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
+							// d.style.backgroundColor = "red"; // ← for debugging purposes
+                            // console.log(d); // ← for debugging purposes
 							d.parentNode.removeChild(d);
 							eliminated = true;
 							break;
@@ -111,13 +114,26 @@ var actualCode = '(' + function() {
 					if (!eliminated) {
 						for (let u of urls) {
 							if (!window.location.pathname.includes(u) && d.innerHTML.includes(u)) {
-								//	d.parentNode.style.backgroundColor = "red"; // ← for debugging purposes
+								// d.style.backgroundColor = "red"; // ← for debugging purposes
+                                // console.log(d); // ← for debugging purposes
 								d.parentNode.removeChild(d);
 								eliminated = true;
 								break;
 							}
 						}
 					}
+                    if (!eliminated) {
+                        for (let br of banned_reposts) {
+                            if (d.innerHTML.includes("<a class=\"author\" href=\"" + br + "\"") &&
+                                d.innerHTML.includes("class=\"copy_quote\"")) {
+								// d.style.backgroundColor = "red"; // ← for debugging purposes
+                                // console.log(d); // ← for debugging purposes
+								d.parentNode.removeChild(d);
+								eliminated = true;
+								break;
+							}
+                        }
+                    }
 					if (!eliminated && d.querySelector("span.wall_copy_more") === null) {
 						d.setAttribute('no_ad', 'true');
 					}
