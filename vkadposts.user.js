@@ -123,7 +123,7 @@ var actualCode = '(' + function() {
 						}
 					}
                     if (!eliminated) {
-                        for (let br of banned_reposts) {
+                        for (let br of banned_reposts_from) {
                             if (d.innerHTML.includes("<a class=\"author\" href=\"" + br + "\"") &&
                                 d.innerHTML.includes("class=\"copy_quote\"")) {
 								// d.style.backgroundColor = "red"; // ← for debugging purposes
