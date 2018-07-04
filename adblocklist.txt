@@ -12,6 +12,7 @@ e.mail.ru##div[data-ad-state] *
 2gis.ru##div.dashboard__apps
 2gis.ru##article._advWarning
 2gis.ru##div.card__recoveryAds
+2gis.ru##div.card__recoveryCute
 2gis.ru##div._commercial
 ! yandex
 ##a[onclick*="yaCounter"]
