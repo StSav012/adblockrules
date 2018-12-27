@@ -8,7 +8,7 @@
 // @copyright       2018, StSav012
 // @author          StSav012
 // @grant           none
-// @version         0.1.20181118.2
+// @version         0.1.20181227.1
 // @run-at          document-end
 // ==/UserScript==
 
@@ -18,7 +18,7 @@
 "use strict";
 
 // blacklisted URLs
-var spamURLs = ['http://qaru.site/', 'https://stackoverrun.com/'];
+var spamURLs = ['http://qaru.site/', 'https://stackoverrun.com/', 'https://manjaro.ru/'];
 
 for (let u of spamURLs) {
   var junk = document.querySelectorAll('div a[href^="' + u + '"]:not([class])');
