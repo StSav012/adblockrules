@@ -14,6 +14,8 @@ e.mail.ru##div[data-ad-state] *
 2gis.ru##div.card__recoveryAds
 2gis.ru##div.card__recoveryCute
 2gis.ru##div._commercial
+2gis.ru##div[data-n="wat-gta-ads-lonely"]
+beta.2gis.ru##div[data-n="wat-gta-ads-lonely"]
 ! yandex
 ##a[onclick*="yaCounter"]
 ##a[href^="//awaps.yandex.ru/"]
