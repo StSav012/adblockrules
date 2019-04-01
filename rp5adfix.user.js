@@ -14,7 +14,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         1
+// @version         2
 // ==/UserScript==
 
 "use strict";
@@ -25,19 +25,13 @@ try {
 catch(e) {
   var actualCode = '(' + function() {
 
-    function isAdBlocker() {return false;}
     adBlocked = false;
-    if($("#banner-bottom").length==1) {
-      $("#banner-bottom").css("width", "1px").css("height", "1px");
-    }
-    if($("#banner-bottom .adsbygoogle").length==1) {
-      $("#banner-bottom .adsbygoogle").css("width", "1px").css("height", "1px");
-    }
-    if($("#banner-bottom #aswift_0_expand").length==1) {
-      $("#banner-bottom #aswift_0_expand").css("width", "1px").css("height", "1px");
-    }
+    function isAdBlocker() {return false;}
+    $("#banner-bottom").remove();
+    $("#banner-bottom .adsbygoogle").remove();
+    $("#banner-bottom #aswift_0_expand").remove();
   }
-  + ')();';
+  + ')(); console.log(\"adBlocked =\", adBlocked);';
 
   var script = document.createElement('script');
   script.textContent = actualCode;
