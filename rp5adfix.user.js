@@ -14,26 +14,16 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         2
+// @version         3
 // ==/UserScript==
 
 "use strict";
 
-try {
+if (typeof sAdIdContainerBottom !== 'undefined') {
   $('body').append('<div id=' + sAdIdContainerBottom.substr(1) + '></div>');
 }
-catch(e) {
-  var actualCode = '(' + function() {
-
-    adBlocked = false;
-    function isAdBlocker() {return false;}
-    $("#banner-bottom").remove();
-    $("#banner-bottom .adsbygoogle").remove();
-    $("#banner-bottom #aswift_0_expand").remove();
-  }
-  + ')(); console.log(\"adBlocked =\", adBlocked);';
-
+if (typeof isAdBlocker !== 'undefined') {
   var script = document.createElement('script');
-  script.textContent = actualCode;
+  script.textContent = 'function isAdBlocker() {return false;}';
   (document.body||document.documentElement).appendChild(script);
 }
