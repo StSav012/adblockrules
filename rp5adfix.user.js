@@ -2,6 +2,9 @@
 // @name            RP5 AdBlock Fix
 // @namespace       rp5 adblock fix
 // @description     breaks RP5 anti-ablock features
+// @description:ru  ломает защиту от блокировки рекламы на сайтах RP5
+// @description:ua  ломает защиту от блокировки рекламы на сайтах RP5
+// @description:kz  ломает защиту от блокировки рекламы на сайтах RP5
 // @match           https://rp5.ru/*
 // @match           https://m.rp5.ru/*
 // @match           https://rp5.ua/*
