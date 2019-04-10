@@ -27,6 +27,6 @@ if (typeof sAdIdContainerBottom !== 'undefined') {
 }
 if (typeof isAdBlocker !== 'undefined') {
   var script = document.createElement('script');
-  script.textContent = 'function isAdBlocker() {return false;}';
+  script.textContent = 'function isAdBlocker() {return false;} function isAdFilter() {return false;}';
   (document.body||document.documentElement).appendChild(script);
 }
