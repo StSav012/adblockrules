@@ -13,25 +13,26 @@
 // @match           https://m.rp5.kz/*
 // @run-at          document-idle
 // @grant           none
-// @copyright       2019, StSav012
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         5
+// @version         6
 // ==/UserScript==
 
 "use strict";
 
-if (typeof sAdIdContainerBottom !== 'undefined') {
-  $('body').append('<div id=' + sAdIdContainerBottom.substr(1) + '></div>');
+if (typeof unsafeWindow.sAdIdContainerBottom !== 'undefined') {
+  var div = document.createElement('DIV');
+  div.id = unsafeWindow.sAdIdContainerBottom.substr(1);
+  (document.body||document.documentElement).appendChild(div);
 }
-if (typeof isAdBlocker !== 'undefined') {
-  var script = document.createElement('script');
-  script.textContent = 'function isAdBlocker() {return false;} function isAdFilter() {return false;}';
+if (typeof unsafeWindow.isAdBlocker !== 'undefined') {
+  var script = document.createElement('SCRIPT');
+  script.textContent = 'function isAdBlocker() {return false;}';
   (document.body||document.documentElement).appendChild(script);
 }
-if (typeof isAdFilter !== 'undefined') {
-  var script = document.createElement('script');
+if (typeof unsafeWindow.isAdFilter !== 'undefined') {
+  var script = document.createElement('SCRIPT');
   script.textContent = 'function isAdFilter() {return false;}';
   (document.body||document.documentElement).appendChild(script);
 }
