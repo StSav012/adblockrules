@@ -13,6 +13,8 @@
 // @match           https://m.rp5.by/*
 // @match           https://rp5.kz/*
 // @match           https://m.rp5.kz/*
+// @match           https://rp5.co.uk/*
+// @match           https://m.rp5.co.uk/*
 // @run-at          document-idle
 // @grant           none
 // @author          StSav012
