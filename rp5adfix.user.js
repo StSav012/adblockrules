@@ -20,28 +20,53 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         9
+// @version         10
 // ==/UserScript==
 
 "use strict";
 
-if (typeof sAdIdContainerBottom !== 'undefined' || typeof unsafeWindow.sAdIdContainerBottom !== 'undefined') {
-  var div = document.createElement('DIV');
-  div.id = (sAdIdContainerBottom || unsafeWindow.sAdIdContainerBottom).substr(1);
-  (document.body||document.documentElement).appendChild(div);
+var div, script;
+if (typeof unsafeWindow !== 'undefined') {
+    if (typeof unsafeWindow.sAdIdContainerBottom !== 'undefined') {
+        div = document.createElement('DIV');
+        div.id = unsafeWindow.sAdIdContainerBottom.substr(1);
+        (document.body||document.documentElement).appendChild(div);
+    }
+    if (typeof unsafeWindow.sContainer !== 'undefined') {
+        div = document.createElement('DIV');
+        div.id = unsafeWindow.sContainer.substr(1);
+        (document.body||document.documentElement).appendChild(div);
+    }
+    if (typeof unsafeWindow.isAdBlocker !== 'undefined') {
+        script = document.createElement('SCRIPT');
+        script.textContent = 'function isAdBlocker() {return false;}';
+        (document.body||document.documentElement).appendChild(script);
+    }
+    if (typeof unsafeWindow.isAdFilter !== 'undefined') {
+        script = document.createElement('SCRIPT');
+        script.textContent = 'function isAdFilter() {return false;}';
+        (document.body||document.documentElement).appendChild(script);
+    }
 }
-if (typeof sContainer !== 'undefined' || typeof unsafeWindow.sContainer !== 'undefined') {
-  var div = document.createElement('DIV');
-  div.id = (sContainer || unsafeWindow.sContainer).substr(1);
-  (document.body||document.documentElement).appendChild(div);
-}
-if (typeof isAdBlocker !== 'undefined' || typeof unsafeWindow.isAdBlocker !== 'undefined') {
-  var script = document.createElement('SCRIPT');
-  script.textContent = 'function isAdBlocker() {return false;}';
-  (document.body||document.documentElement).appendChild(script);
-}
-if (typeof isAdFilter !== 'undefined' || typeof unsafeWindow.isAdFilter !== 'undefined') {
-  var script = document.createElement('SCRIPT');
-  script.textContent = 'function isAdFilter() {return false;}';
-  (document.body||document.documentElement).appendChild(script);
+else {
+    if (typeof sAdIdContainerBottom !== 'undefined') {
+        div = document.createElement('DIV');
+        div.id = sAdIdContainerBottom.substr(1);
+        (document.body||document.documentElement).appendChild(div);
+    }
+    if (typeof sContainer !== 'undefined') {
+        div = document.createElement('DIV');
+        div.id = sContainer.substr(1);
+        (document.body||document.documentElement).appendChild(div);
+    }
+    if (typeof isAdBlocker !== 'undefined') {
+        script = document.createElement('SCRIPT');
+        script.textContent = 'function isAdBlocker() {return false;}';
+        (document.body||document.documentElement).appendChild(script);
+    }
+    if (typeof isAdFilter !== 'undefined') {
+        script = document.createElement('SCRIPT');
+        script.textContent = 'function isAdFilter() {return false;}';
+        (document.body||document.documentElement).appendChild(script);
+    }
 }
