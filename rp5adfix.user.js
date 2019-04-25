@@ -65,14 +65,12 @@ if (typeof unsafeWindow !== 'undefined') {
             maxLengthIndex = w1.indexOf(w);
           }
         }
-        console.log(maxLength, maxLengthIndex);
         if (maxLengthIndex > 0) {
           var w2 = w1[maxLengthIndex - 1].split(' ');
           var fn = w2[w2.lastIndexOf('function') + 1].split('(')[0];
           script = document.createElement('SCRIPT');
           script.textContent = 'function ' + fn + '() {addCookie("is_adblock", false, 365);}';
           (document.body||document.documentElement).appendChild(script);
-          console.log(fn);
           s.textContent += script.textContent;
         }
       }
