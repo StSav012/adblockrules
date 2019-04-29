@@ -20,7 +20,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         14
+// @version         15
 // ==/UserScript==
 
 "use strict";
@@ -40,7 +40,7 @@ script.textContent = '';
 for (var l in uw) {
     if (uw.hasOwnProperty(l)
         && typeof uw[l] === 'function'
-        && uw[l].toString().indexOf('sABMess') != -1) {
+        && uw[l].toString().indexOf('AdIdSense') != -1) {
         script.textContent += 'function ' + uw[l].name + '() {}\n';
     }
 }
