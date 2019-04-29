@@ -40,7 +40,7 @@ script.textContent = '';
 for (var l in uw) {
     if (uw.hasOwnProperty(l)
         && typeof uw[l] === 'function'
-        && uw[l].toString().indexOf('AdIdSense') != -1) {
+        && uw[l].toString().indexOf('sHtmlBlock') != -1) {
         script.textContent += 'function ' + uw[l].name + '() {}\n';
     }
 }
