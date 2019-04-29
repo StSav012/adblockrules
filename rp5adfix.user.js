@@ -20,7 +20,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         13
+// @version         14
 // ==/UserScript==
 
 "use strict";
@@ -35,15 +35,13 @@ if (typeof uw.isAdFilter !== 'undefined') {
     script.textContent = 'function isAdFilter() {return false;}';
     (document.body||document.documentElement).appendChild(script);
 }
-if (typeof uw.sABMess !== 'undefined') {
-    script = document.createElement('SCRIPT');
-    script.textContent = '';
-    for (var l in uw) {
-        if (uw.hasOwnProperty(l)
-            && typeof uw[l] === 'function'
-            && uw[l].toString().indexOf('sABMess') != -1) {
-            script.textContent += 'function ' + uw[l].name + '() {}\n';
-        }
+script = document.createElement('SCRIPT');
+script.textContent = '';
+for (var l in uw) {
+    if (uw.hasOwnProperty(l)
+        && typeof uw[l] === 'function'
+        && uw[l].toString().indexOf('sABMess') != -1) {
+        script.textContent += 'function ' + uw[l].name + '() {}\n';
     }
-    (document.body||document.documentElement).appendChild(script);
 }
+(document.body||document.documentElement).appendChild(script);
