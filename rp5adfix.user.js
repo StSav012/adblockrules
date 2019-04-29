@@ -20,28 +20,41 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         16
+// @version         17
 // ==/UserScript==
 
 "use strict";
 
 var script;
-var uw = window;
+var w = window;
 if (typeof unsafeWindow !== 'undefined') {
-    uw = unsafeWindow;
+    w = unsafeWindow;
 }
-if (typeof uw.isAdFilter !== 'undefined') {
+if (typeof w.isAdFilter !== 'undefined') {
     script = document.createElement('SCRIPT');
     script.textContent = 'function isAdFilter() {return false;}';
     (document.body||document.documentElement).appendChild(script);
 }
-script = document.createElement('SCRIPT');
-script.textContent = '';
-for (var l in uw) {
-    if (uw.hasOwnProperty(l)
-        && typeof uw[l] === 'function'
-        && uw[l].toString().indexOf('sHtmlBlock') != -1) {
-        script.textContent += 'function ' + uw[l].name + '() {}\n';
+var name = '';
+for (var l in w) {
+    if (w.hasOwnProperty(l)
+        && w[l]
+        && typeof w[l] === 'object'
+        && w[l].constructor === Array
+        && w[l].toString().indexOf('txt.rp5.') != -1) {
+        name = l;
+        break;
     }
 }
-(document.body||document.documentElement).appendChild(script);
+if (name) {
+    script = document.createElement('SCRIPT');
+    script.textContent = '';
+    for (var l in w) {
+        if (w.hasOwnProperty(l)
+            && typeof w[l] === 'function'
+            && w[l].toString().indexOf(name) != -1) {
+            script.textContent += 'function ' + w[l].name + '() {}\n';
+        }
+    }
+    (document.body||document.documentElement).appendChild(script);
+}
