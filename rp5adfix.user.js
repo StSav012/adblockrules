@@ -20,7 +20,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         17
+// @version         18
 // ==/UserScript==
 
 "use strict";
@@ -35,26 +35,21 @@ if (typeof w.isAdFilter !== 'undefined') {
     script.textContent = 'function isAdFilter() {return false;}';
     (document.body||document.documentElement).appendChild(script);
 }
-var name = '';
 for (var l in w) {
     if (w.hasOwnProperty(l)
         && w[l]
         && typeof w[l] === 'object'
         && w[l].constructor === Array
         && w[l].toString().indexOf('txt.rp5.') != -1) {
-        name = l;
-        break;
-    }
-}
-if (name) {
-    script = document.createElement('SCRIPT');
-    script.textContent = '';
-    for (var l in w) {
-        if (w.hasOwnProperty(l)
-            && typeof w[l] === 'function'
-            && w[l].toString().indexOf(name) != -1) {
-            script.textContent += 'function ' + w[l].name + '() {}\n';
+        script = document.createElement('SCRIPT');
+        script.textContent = '';
+        for (var ll in w) {
+            if (w.hasOwnProperty(ll)
+                && typeof w[ll] === 'function'
+                && w[ll].toString().indexOf(l + '[' + w[l].indexOf('is_adblock') + ']') != -1) {
+                script.textContent += 'function ' + w[ll].name + '() {}\n';
+            }
         }
+        (document.body||document.documentElement).appendChild(script);
     }
-    (document.body||document.documentElement).appendChild(script);
 }
