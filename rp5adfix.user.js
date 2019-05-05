@@ -15,12 +15,22 @@
 // @match           https://m.rp5.kz/*
 // @match           https://rp5.co.uk/*
 // @match           https://m.rp5.co.uk/*
+// @match           http://rp5.ru/*
+// @match           http://m.rp5.ru/*
+// @match           http://rp5.ua/*
+// @match           http://m.rp5.ua/*
+// @match           http://rp5.by/*
+// @match           http://m.rp5.by/*
+// @match           http://rp5.kz/*
+// @match           http://m.rp5.kz/*
+// @match           http://rp5.co.uk/*
+// @match           http://m.rp5.co.uk/*
 // @run-at          document-idle
 // @grant           unsafeWindow
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         19
+// @version         20
 // ==/UserScript==
 
 "use strict";
