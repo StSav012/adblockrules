@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.7.20190425.1
+// @version         0.7.20190618.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -93,7 +93,8 @@ var actualCode = '(' + function() {
 	var dom_ad = [	// beware: these rules might break the site
         	"div.wall_item.feedAssistance", "div.feed_friends_recomm",    // to hide friends suggestions (arguable)
 		"div.ads_ad_box",
-		"div[data-ad-block-uid]"
+		"div[data-ad-block-uid]",
+		"a.story_feed_new_item_promo"
 	];
 	var divs;	// selected tags list
 	function cleanAd() {
