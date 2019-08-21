@@ -34,32 +34,4 @@
 // ==/UserScript==
 
 "use strict";
-
-var script;
-var w = window;
-if (typeof unsafeWindow !== 'undefined') {
-    w = unsafeWindow;
-}
-if (typeof w.adFilters !== 'undefined') {
-    script = document.createElement('SCRIPT');
-    script.textContent = 'adFilters.breakTable = function() {};';
-    (document.body||document.documentElement).appendChild(script);
-}
-for (var l in w) {
-    if (w.hasOwnProperty(l)
-        && w[l]
-        && typeof w[l] === 'object'
-        && w[l].constructor === Array
-        && w[l].toString().indexOf('txt.rp5.') != -1) {
-        script = document.createElement('SCRIPT');
-        script.textContent = '';
-        for (var ll in w) {
-            if (w.hasOwnProperty(ll)
-                && typeof w[ll] === 'function'
-                && w[ll].toString().indexOf(l + '[' + w[l].indexOf('is_adblock') + ']') != -1) {
-                script.textContent += 'function ' + w[ll].name + '() {}\n';
-            }
-        }
-        (document.body||document.documentElement).appendChild(script);
-    }
-}
+document.cABNoCheck = 1;
