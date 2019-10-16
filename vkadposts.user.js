@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.7.20190618.1
+// @version         0.7.20191016.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
 // @author          StSav012
 // @namespace       vkap
 // @run-at          document-idle
+// @homepageURL     https://github.com/StSav012/adblockrules/blob/master/vkadposts.user.js
+// @downloadURL     https://github.com/StSav012/adblockrules/raw/master/vkadposts.user.js
 // ==/UserScript==
 
 "use strict";
