@@ -25,42 +25,55 @@
 // @match           http://m.rp5.kz/*
 // @match           http://rp5.co.uk/*
 // @match           http://m.rp5.co.uk/*
-// @run-at          document-idle
+// @run-at          document-end
 // @grant           unsafeWindow
+// @grant GM.setValue
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         21
+// @version         22
 // ==/UserScript==
 
 "use strict";
 
-var script;
-var w = window;
-if (typeof unsafeWindow !== 'undefined') {
-    w = unsafeWindow;
-}
-if (typeof w.adFilters !== 'undefined') {
-    script = document.createElement('SCRIPT');
-    script.textContent = 'adFilters.breakTable = function() {};';
-    (document.body||document.documentElement).appendChild(script);
-}
-for (var l in w) {
-    if (w.hasOwnProperty(l)
-        && w[l]
-        && typeof w[l] === 'object'
-        && w[l].constructor === Array
-        && w[l].toString().indexOf('txt.rp5.') != -1) {
-        script = document.createElement('SCRIPT');
-        script.textContent = '';
-        for (var ll in w) {
-            if (w.hasOwnProperty(ll)
-                && typeof w[ll] === 'function'
-                && w[ll].toString().indexOf(l + '[' + w[l].indexOf('is_adblock') + ']') != -1) {
-                script.textContent += 'function ' + w[ll].name + '() {}\n';
+var actualCode = '(' + function() {
+    "use strict";
+
+    var w = window;
+    if (typeof unsafeWindow !== 'undefined') {
+        w = unsafeWindow;
+    }
+    var ss = w.document.querySelectorAll("script[src][onerror]");
+    for (var s in Array.from(ss)) {
+        var e = ss[s].attributes.onerror.value.trim();
+        if (e.indexOf(' ') === -1) {
+            while (e.length > 0) {
+                if (w.hasOwnProperty(e)
+                    && typeof w[e] === 'function') {
+                    w[e] = function() {};
+                    break;
+                }
+                else {
+                    e = e.slice(0, -1);
+                }
             }
         }
-        (document.body||document.documentElement).appendChild(script);
+        else if (typeof w.adFilters !== 'undefined') {
+            w.adFilters.breakTable = function() {};
+            w.adFilters.answer = function() {};
+        }
     }
-}
-w.document.cABNoCheck = ',';
+    for (var l in w) {
+        if (w.hasOwnProperty(l)
+            && w[l]
+            && typeof w[l] === 'object'
+            && w[l].constructor === Array
+            && w[l].length == 2
+            && w[l][1] === 'document') {
+            w.document[w[l][0]] = undefined;
+        }
+    }
+} + ')();';
+var script = document.createElement('script');
+script.textContent = actualCode;
+(document.body||document.documentElement).appendChild(script);
