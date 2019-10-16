@@ -30,7 +30,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         20
+// @version         21
 // ==/UserScript==
 
 "use strict";
