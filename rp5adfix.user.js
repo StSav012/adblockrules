@@ -26,12 +26,10 @@
 // @match           http://rp5.co.uk/*
 // @match           http://m.rp5.co.uk/*
 // @run-at          document-end
-// @grant           unsafeWindow
-// @grant GM.setValue
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         22
+// @version         22.1
 // ==/UserScript==
 
 "use strict";
@@ -39,18 +37,14 @@
 var actualCode = '(' + function() {
     "use strict";
 
-    var w = window;
-    if (typeof unsafeWindow !== 'undefined') {
-        w = unsafeWindow;
-    }
-    var ss = w.document.querySelectorAll("script[src][onerror]");
+    var ss = window.document.querySelectorAll("script[src][onerror]");
     for (var s in Array.from(ss)) {
         var e = ss[s].attributes.onerror.value.trim();
         if (e.indexOf(' ') === -1) {
             while (e.length > 0) {
-                if (w.hasOwnProperty(e)
-                    && typeof w[e] === 'function') {
-                    w[e] = function() {};
+                if (window.hasOwnProperty(e)
+                    && typeof window[e] === 'function') {
+                    window[e] = function() {};
                     break;
                 }
                 else {
@@ -58,19 +52,19 @@ var actualCode = '(' + function() {
                 }
             }
         }
-        else if (typeof w.adFilters !== 'undefined') {
-            w.adFilters.breakTable = function() {};
-            w.adFilters.answer = function() {};
+        else if (typeof window.adFilters !== 'undefined') {
+            window.adFilters.breakTable = function() {};
+            window.adFilters.answer = function() {};
         }
     }
-    for (var l in w) {
-        if (w.hasOwnProperty(l)
-            && w[l]
-            && typeof w[l] === 'object'
-            && w[l].constructor === Array
-            && w[l].length == 2
-            && w[l][1] === 'document') {
-            w.document[w[l][0]] = undefined;
+    for (var l in window) {
+        if (window.hasOwnProperty(l)
+            && window[l]
+            && typeof window[l] === 'object'
+            && window[l].constructor === Array
+            && window[l].length == 2
+            && window[l][1] === 'document') {
+            window.document[window[l][0]] = undefined;
         }
     }
 } + ')();';
