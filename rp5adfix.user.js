@@ -63,3 +63,4 @@ for (var l in w) {
         (document.body||document.documentElement).appendChild(script);
     }
 }
+w.document.cABNoCheck = ',';
