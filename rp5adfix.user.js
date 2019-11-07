@@ -29,7 +29,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         22.1
+// @version         23
 // ==/UserScript==
 
 "use strict";
@@ -52,19 +52,29 @@ var actualCode = '(' + function() {
                 }
             }
         }
-        else if (typeof window.adFilters !== 'undefined') {
-            window.adFilters.breakTable = function() {};
-            window.adFilters.answer = function() {};
-        }
     }
     for (var l in window) {
         if (window.hasOwnProperty(l)
             && window[l]
-            && typeof window[l] === 'object'
-            && window[l].constructor === Array
-            && window[l].length == 2
-            && window[l][1] === 'document') {
-            window.document[window[l][0]] = undefined;
+            && typeof window[l] === 'object') {
+            if (window[l].constructor === Object 
+                && window[l].toSource().indexOf('.removeAttr(') !== -1) {
+                for (f in window[l]) {
+                    if (typeof window[l][f] === 'function') {
+                        if (window[l][f].toString().indexOf('return') !== -1) {
+                            window[l][f] = function() {return 0;};
+                        }
+                        else {
+                            window[l][f] = function() {};
+                        }
+                    }
+                }
+            }
+            else if (window[l].constructor === Array
+                && window[l].length == 2
+                && window[l][1] === 'document') {
+                window.document[window[l][0]] = undefined;
+            }
         }
     }
 } + ')();';
