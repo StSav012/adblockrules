@@ -29,7 +29,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         23
+// @version         24
 // ==/UserScript==
 
 "use strict";
@@ -77,6 +77,8 @@ var actualCode = '(' + function() {
             }
         }
     }
+    var bannerBottom = document.getElementById("banner-bottom");
+    bannerBottom.parentElement.removeChild(bannerBottom);
 } + ')();';
 var script = document.createElement('script');
 script.textContent = actualCode;
