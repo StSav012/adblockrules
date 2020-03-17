@@ -29,7 +29,7 @@
 // @author          StSav012
 // @homepageURL     https://github.com/StSav012/adblockrules/blob/master/rp5adfix.user.js
 // @downloadURL     https://github.com/StSav012/adblockrules/raw/master/rp5adfix.user.js
-// @version         24
+// @version         25
 // ==/UserScript==
 
 "use strict";
@@ -57,8 +57,8 @@ var actualCode = '(' + function() {
         if (window.hasOwnProperty(l)
             && window[l]
             && typeof window[l] === 'object') {
-            if (window[l].constructor === Object 
-                && window[l].toSource().indexOf('.removeAttr(') !== -1) {
+            if (window[l].constructor === Object
+                && window[l].toString().indexOf('.removeAttr(') !== -1) {
                 for (f in window[l]) {
                     if (typeof window[l][f] === 'function') {
                         if (window[l][f].toString().indexOf('return') !== -1) {
@@ -70,15 +70,31 @@ var actualCode = '(' + function() {
                     }
                 }
             }
-            else if (window[l].constructor === Array
-                && window[l].length == 2
-                && window[l][1] === 'document') {
-                window.document[window[l][0]] = undefined;
+            else if (window[l].constructor === Array) {
+                if (window[l].length == 2
+                    && window[l][1] === 'document') {
+                    window.document[window[l][0]] = undefined;
+                }
+                else if (window[l].toString().includes("txt.rp5.")) {
+                    for (var i of window[l]) {
+                        if (i.endsWith("()")) {
+                            var j = i.replace(/\(\)$/, "");
+                            if (typeof window[j] === "function") {
+                                var k = window[j].toString();
+                                if (! k.includes(";") && ! k.includes("=")) {
+                                    window[j] = function() {};
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
     var bannerBottom = document.getElementById("banner-bottom");
-    bannerBottom.parentElement.removeChild(bannerBottom);
+    if (bannerBottom) {
+        bannerBottom.parentElement.removeChild(bannerBottom);
+    }
 } + ')();';
 var script = document.createElement('script');
 script.textContent = actualCode;
