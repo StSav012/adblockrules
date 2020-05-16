@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Skip domru ad pages
-// @version         0.1.20190717.1
+// @version         0.1.20200516.1
 // @description	    skips domru ad pages
 // @match           *://info.ertelecom.ru/*
 // @grant           none
@@ -14,7 +14,7 @@
 
 var actualCode = '(' + function() {
 	"use strict";
-	var x = document.querySelectorAll("a.js-close, a.close, a.links_skip");
+	var x = document.querySelectorAll("a.js-close, a.close, a.links_skip, table.es-content:first-child > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td.es-m-txt-c:first-child > a:first-child");
 	if (x.length == 1) {
 		window.location = x[0].href;
 	}
