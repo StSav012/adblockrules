@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Remove ad posts from VK.com
-// @version         0.7.20191101.1
+// @version         0.7.20200519.1
 // @description	    removes ad posts from feed and walls by keywords
 // @match           *://*.vk.com/*
 // @grant           none
@@ -16,6 +16,7 @@
 var actualCode = '(' + function() {
 	"use strict";
 	var keywords = [
+		"Партнёрский пост.", "#партн(е|ё)рскийпост", "#партн(е|ё)рский<\/a> пост",
 		"РЕПОСТ", "REPOST",
 		"д(е|e)л(а|a)ть (|\")(р|p)(е|e)п(о|o)(с|c)т(|\")", "д(е|e)л(а|a)й(т|)(е|e|) (|\")(р|p)(е|e)п(о|o)(с|c)т(|\")",
 		"делавшему (|\")(р|p)(е|e)п(о|o)(с|c)т(|\")", "(Р|р|P|p)(е|e)п(о|o)(с|c)т( этой| данной| этoй) з(а|a)пи(с|c)и",
