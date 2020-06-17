@@ -27,6 +27,8 @@ yandex.ru##div.home-panel-content-view_has-panorama__tip
 yandex.ru##div.home-panel-content-view_has-panorama__menu + div
 yandex.ru##div.home-panel-content-view__tip + div
 yandex.ru##div.home-panel-content-view__tip
+docviewer.yandex.ru##.with-bottom-direct > div > *:not(div)
+docviewer.yandex.ru##.js-doc-html > div > *:not(div):not(h2)
 ! rp5.ru
 rp5.ru##div.advert-rp5-invite-bottom-picture
 rp5.ru##div.txt_invite_bottom_container
@@ -36,25 +38,6 @@ rp5.ru##a[href^="https://txt.rp5.ru/?AdvertMgmt"]
 news.sportbox.ru##a.right_banner
 ! 4pda.ru
 4pda.ru##body>div:first-child:not(#ipbwrapper)
-! other
-! random 12-letter names and .com
-blprkaomvazv.com
-btbapoifsphl.com
-kqsipdhvcejx.com
-krovrhmqgupd.com
-popzkvfimbox.com
-riaetcuycxjz.com
-spfrlpjmvkmq.com
-uyfsqkwhpihm.com
-vkdbvgcawubn.com
-xcakezoqgkmj.com
-xseczkcysdvc.com
-zmbrweqglexv.com
-! not quite random but still 8-letter names and .com
-dryicons.com
-piercial.com
-svrsqqtj.com
-teraxhif.com
 !
 lamalama.top
 thisfunctionisnotavailablenow.xyz
