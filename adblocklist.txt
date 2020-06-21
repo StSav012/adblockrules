@@ -27,6 +27,7 @@ yandex.ru##div.home-panel-content-view_has-panorama__tip
 yandex.ru##div.home-panel-content-view_has-panorama__menu + div
 yandex.ru##div.home-panel-content-view__tip + div
 yandex.ru##div.home-panel-content-view__tip
+yandex.ru##.route-panel-form-view__content > div > div[style]
 docviewer.yandex.ru##.with-bottom-direct > div > *:not(div)
 docviewer.yandex.ru##.js-doc-html > div > *:not(div):not(h2)
 ! rp5.ru
@@ -58,3 +59,19 @@ firstsrow.eu###bannerInCenter
 ! must be common
 */pu.js
 */flash_popunder.js
+! 3/14/2020 coronavirus-monitor.ru
+@@||coronavirus-monitor.ru/scripts/statistics/*$script,1p
+! 4/13/2020 https://windowsreport.com
+windowsreport.com##.qc-cmp-showing.qc-cmp-ui-container
+! 4/23/2020 https://coronavirus-monitor.ru
+coronavirus-monitor.ru##div.partner-right-block
+! 4/24/2020 https://lk.megafon.ru
+lk.megafon.ru##.lk_header_balance
+! 5/8/2020 https://www.worldometers.info
+www.worldometers.info##.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
+! 5/25/2020 https://www.poisknews.ru
+www.poisknews.ru##.branding
+! 6/7/2020 https://pravda-nn.ru
+pravda-nn.ru##.in.modal-backdrop
+! 6/10/2020 http://screenshots.portforward.com
+screenshots.portforward.com##.cc-color-override-949397977.cc-right.cc-bottom.cc-theme-block.cc-type-info.cc-floating.cc-window
