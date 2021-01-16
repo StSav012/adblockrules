@@ -33,6 +33,8 @@ docviewer.yandex.ru##[style="width: 100%;"]
 mail.yandex.ru##[data-key="box=infoline-box"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"]
+livejournal.com##article + div
+livejournal.com##div.ng-isolate-scope
 ! rp5.ru
 rp5.ru##div.advert-rp5-invite-bottom-picture
 rp5.ru##div.txt_invite_bottom_container
