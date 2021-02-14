@@ -29,7 +29,7 @@ yandex.ru##div.home-panel-content-view__tip + div
 yandex.ru##div.home-panel-content-view__tip
 yandex.ru##.route-panel-form-view__content > div > div[style]
 yandex.ru##.traffic-panel-view ~ div > div[style]
-docviewer.yandex.ru##[style="width: 100%;"]
+yandex.ru##[style="width: 100%;"]
 mail.yandex.ru##[data-key="box=infoline-box"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"]
