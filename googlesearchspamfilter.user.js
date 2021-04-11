@@ -8,7 +8,7 @@
 // @copyright       2018, StSav012
 // @author          StSav012
 // @grant           none
-// @version         0.1.20210122.1
+// @version         0.1.20210411.1
 // @run-at          document-end
 // ==/UserScript==
 
@@ -18,9 +18,9 @@
 "use strict";
 
 // blacklisted URLs
-var spamURLs = ['http://qaru.site/', 'https://stackoverrun.com/', 'https://manjaro.ru/', 'https://qastack.ru/',
-                'https://coderoad.ru/', 'https://overcoder.net/', 'https://www.coder.work/', 'https://helpexe.ru',
-                'https://www.dvhu.com/', 'http://doc.crossplatform.ru/', 'https://quares.ru/'];
+var spamURLs = ['http://qaru.site/', 'https://stackoverrun.com/', 'https://manjaro.ru/', 'https://qastack.ru/', 'https://coderoad.ru/',
+                'https://overcoder.net/', 'https://overcoder.net:8443/', 'https://www.coder.work/', 'https://helpexe.ru', 'https://www.dvhu.com/',
+                'http://doc.crossplatform.ru/', 'https://quares.ru/', 'https://www.cnpython.com/', 'http://hk.uwenku.com/', 'https://www.debugcn.com/'];
 
 for (let u of spamURLs) {
   var junk = document.querySelectorAll('div a[href^="' + u + '"]:not([class])');
