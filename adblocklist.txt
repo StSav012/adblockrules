@@ -22,6 +22,7 @@ beta.2gis.ru##div[data-n="wat-gta-ads-carousel"]
 ! yandex
 ##a[onclick*="yaCounter"]
 ##a[href^="//awaps.yandex.ru/"]
+yandex.ru##div.home-panel-content-view__body > div > div > div:not(.home-panel-content-view__wrapper)
 yandex.ru##div.home-panel-content-view_has-panorama__tip + div
 yandex.ru##div.home-panel-content-view_has-panorama__tip
 yandex.ru##div.home-panel-content-view_has-panorama__menu + div
