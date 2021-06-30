@@ -86,4 +86,4 @@ screenshots.portforward.com##.cc-color-override-949397977.cc-right.cc-bottom.cc-
 ! 2021-06-30 https://vk.com
 vk.com##.VideosFeedTitle + div
 vk.com##.VideosFeedTitle
-vk.com##.ShortVideoFeedBlock
+vk.com##.ShortVideoFeedBlock.page_block
