@@ -62,6 +62,15 @@ bro.adca.st##.advertisement
 wizhdsports.to###floatLayer1
 firstsrow.eu###hiddenBannerCanvas
 firstsrow.eu###bannerInCenter
+chaussew.net
+diginetica.net
+facebook.net
+ikoptaud.com
+jivosite.com
+louloapi.com
+sotchoft.net
+tawk.to
+top100.ru
 ! must be common
 */pu.js
 */flash_popunder.js
