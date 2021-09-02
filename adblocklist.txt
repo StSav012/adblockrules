@@ -64,7 +64,6 @@ firstsrow.eu###hiddenBannerCanvas
 firstsrow.eu###bannerInCenter
 chaussew.net
 diginetica.net
-facebook.net
 ikoptaud.com
 jivosite.com
 louloapi.com
