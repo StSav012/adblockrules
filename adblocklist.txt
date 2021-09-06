@@ -5,6 +5,8 @@
 !
 ! mail.ru
 e.mail.ru##div[data-ad-state] *
+e.mail.ru##.application-mail__layout_main div[style]:has(a.js-letter-list-item) > div
+e.mail.ru##.application-mail__layout_main > span > div:last-child
 ! 2gis.ru
 2gis.ru##span.cardInfrastructureItem__providersButton._undashed.link
 2gis.ru##div.firmCard__recoveryAds
