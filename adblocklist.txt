@@ -5,7 +5,6 @@
 !
 ! mail.ru
 e.mail.ru##div[data-ad-state] *
-e.mail.ru##.application-mail__layout_main div[style]:has(a.js-letter-list-item) > div
 e.mail.ru##.application-mail__layout_main > span > div:last-child
 ! 2gis.ru
 2gis.ru##span.cardInfrastructureItem__providersButton._undashed.link
@@ -36,6 +35,7 @@ yandex.ru##[style="width: 100%;"]:not([class])
 mail.yandex.ru##[data-key="box=infoline-box"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"]
+mail.yandex.ru##.mail-Layout-Main > :not(.mail-Advanced-Search):not(.mail-Layout-ContentWrapper)
 livejournal.com##article + div
 livejournal.com##div.ng-isolate-scope
 ! rp5.ru
