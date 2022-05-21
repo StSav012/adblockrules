@@ -97,3 +97,6 @@ screenshots.portforward.com##.cc-color-override-949397977.cc-right.cc-bottom.cc-
 vk.com##.VideosFeedTitle + div
 vk.com##.VideosFeedTitle
 vk.com##.ShortVideoFeedBlock.page_block
+! 2022-05-21 http://dubznetwork.com
+dubznetwork.com##.ad-modal
+
