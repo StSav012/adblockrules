@@ -103,3 +103,5 @@ dubznetwork.com##.ad-modal
 streamhd247.online##body~div
 olacast.live###arc-brocker
 olacast.live##body>div
+! 2022-05-28 https://player.licenses4.me
+player.licenses4.me###UnMutePlayer
