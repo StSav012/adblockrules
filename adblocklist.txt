@@ -36,6 +36,7 @@ mail.yandex.ru##[data-key="box=infoline-box"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"] + div
 mail.yandex.ru##[data-key="view=mail-pro-left-column-button"]
 mail.yandex.ru##.mail-Layout-Main > :not(.mail-Advanced-Search):not(.mail-Layout-ContentWrapper)
+market.yandex.ru##div:has(>a[href^="https://market.yandex.ru/special/"])
 livejournal.com##article + div
 livejournal.com##div.ng-isolate-scope
 ! rp5.ru
