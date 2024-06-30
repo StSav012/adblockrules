@@ -29,6 +29,7 @@ yandex.ru##div.home-panel-content-view_has-panorama__tip
 yandex.ru##div.home-panel-content-view_has-panorama__menu + div
 yandex.ru##div.home-panel-content-view__tip + div
 yandex.ru##div.home-panel-content-view__tip
+yandex.ru##.promo-button
 yandex.ru##.route-panel-form-view__content > div > div[style]
 yandex.ru##.traffic-panel-view ~ div > div[style]
 yandex.ru##[style="width: 100%;"]:not([class])
